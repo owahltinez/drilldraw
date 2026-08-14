@@ -33,7 +33,7 @@ Equipment is assumed to be 2–3 basketballs and a bag of cones, always. That is
 
 ## The catalog
 
-140 drills in `src/drills.json`. One object per drill:
+141 drills in `src/drills.json`. One object per drill:
 
 ```json
 {

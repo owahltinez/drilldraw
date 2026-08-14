@@ -2414,6 +2414,27 @@
     ]
   },
   {
+    "id": "shoot-and-sprint",
+    "name": "Shoot and Sprint",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "One ball per pair: one shooter, one rebounder. The shooter picks any spot outside the key and shoots, then immediately runs to touch half court and comes back. The rebounder collects the ball and returns the pass the moment the shooter is set again. First to eight makes, then swap roles. The shooter can move to a different spot on every rep.",
+    "coachingPoints": [
+      "The shot has to hold up tired — that is the whole point, so do not let the form collapse late",
+      "Rebounder passes on time and on target; a lazy pass hands their partner a rest",
+      "Set the feet before the catch rather than shooting on the run in off the sprint"
+    ]
+  },
+  {
     "id": "shoot-till-you-make-it",
     "name": "Shoot Till You Make It",
     "category": "shooting",
