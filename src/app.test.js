@@ -4,30 +4,48 @@ import { Window } from "happy-dom";
 const pageHtml = await Bun.file(new URL("./page.html", import.meta.url)).text();
 const STORAGE_KEY = "drill-draw.filters";
 
+const FAVORITES_KEY = "drill-draw.favorites";
+
 /**
  * Mounts the real page markup and the real app module in a fresh DOM, the same
  * way the built file does, so the wiring between the two is what gets tested.
  */
-async function mountApp({ storage } = {}) {
-  const window = new Window({ url: "https://localhost/" });
+async function mountApp({ storage, favoritesStorage, hash } = {}) {
+  const url = hash ? `https://localhost/#${hash}` : "https://localhost/";
+  const window = new Window({ url });
+  window.localStorage.clear();
   window.document.body.innerHTML = pageHtml.replace(/<title>.*?<\/title>/s, "");
 
-  // Seed before importing: the app reads saved filters as it starts up.
+  // Seed before importing: the app reads saved filters and favorites as it starts up.
   if (storage) window.localStorage.setItem(STORAGE_KEY, storage);
+  if (favoritesStorage) window.localStorage.setItem(FAVORITES_KEY, favoritesStorage);
 
-  // The app module reads document/localStorage off the globals at import time.
-  const previous = { document: globalThis.document, localStorage: globalThis.localStorage };
+  // The app module reads document/localStorage/location off the globals at import time.
+  const previous = {
+    window: globalThis.window,
+    document: globalThis.document,
+    localStorage: globalThis.localStorage,
+    location: globalThis.location,
+    history: globalThis.history,
+  };
+  globalThis.window = window;
   globalThis.document = window.document;
   globalThis.localStorage = window.localStorage;
+  globalThis.location = window.location;
+  globalThis.history = window.history;
 
-  // A cache-busting query gives every test a freshly evaluated module.
-  await import(`./app.js?t=${Math.random()}`);
+  const appModule = await import("./app.js");
+  appModule.init();
 
   return {
     document: window.document,
+    window,
     restore() {
+      globalThis.window = previous.window;
       globalThis.document = previous.document;
       globalThis.localStorage = previous.localStorage;
+      globalThis.location = previous.location;
+      globalThis.history = previous.history;
     },
   };
 }
@@ -47,6 +65,7 @@ beforeEach(async () => {
 });
 
 afterEach(() => {
+  app.window?.localStorage?.clear();
   app.restore();
 });
 
@@ -58,6 +77,8 @@ describe("first paint", () => {
     expect(document.querySelectorAll("#type .seg").length).toBe(3);
     // Nine skill areas plus the "Any skill" option.
     expect(document.querySelectorAll("#categories .seg").length).toBe(10);
+    // All vs Favorites
+    expect(document.querySelectorAll("#favorites .seg").length).toBe(2);
   });
 
   test("shows a match count and no drill until asked", () => {
@@ -177,5 +198,90 @@ describe("browsing", () => {
     row.click();
     expect(document.querySelector("#card").hidden).toBe(false);
     expect(document.querySelector(".drill-name").textContent).toBe(name);
+  });
+});
+
+describe("deep linking", () => {
+  test("opens specific drill card directly when deep linked in URL hash", async () => {
+    app.restore();
+    app = await mountApp({ hash: "circle-tag-defense" });
+
+    const card = app.document.querySelector("#card");
+    expect(card.hidden).toBe(false);
+    expect(card.querySelector(".drill-name").textContent).toBe("Circle Tag");
+  });
+
+  test("updates the URL when a drill is selected", () => {
+    const { document } = app;
+    const row = document.querySelector("#list .list-row");
+    row.click();
+
+    expect(globalThis.location.hash.length).toBeGreaterThan(1);
+  });
+
+  test("hashchange event displays the newly targeted drill", () => {
+    const { document, window } = app;
+    expect(document.querySelector("#card").hidden).toBe(true);
+
+    window.location.hash = "#circle-tag-defense";
+    window.dispatchEvent(new window.Event("hashchange"));
+
+    const card = document.querySelector("#card");
+    expect(card.hidden).toBe(false);
+    expect(card.querySelector(".drill-name").textContent).toBe("Circle Tag");
+  });
+});
+
+describe("favorites", () => {
+  test("toggling favorite updates local storage and card button state", () => {
+    const { document } = app;
+    const row = document.querySelector("#list .list-row");
+    row.click();
+
+    let favBtn = document.querySelector(".card-actions button.card-btn");
+    expect(favBtn.textContent).toBe("☆ Save");
+    expect(favBtn.getAttribute("aria-pressed")).toBe("false");
+
+    favBtn.click();
+
+    favBtn = document.querySelector(".card-actions button.card-btn");
+    expect(favBtn.textContent).toBe("★ Saved");
+    expect(favBtn.classList.contains("is-fav")).toBe(true);
+    expect(favBtn.getAttribute("aria-pressed")).toBe("true");
+
+    const saved = JSON.parse(globalThis.localStorage.getItem(FAVORITES_KEY));
+    expect(Array.isArray(saved)).toBe(true);
+    expect(saved.length).toBe(1);
+
+    // Clicking again removes from favorites
+    favBtn.click();
+    favBtn = document.querySelector(".card-actions button.card-btn");
+    expect(favBtn.textContent).toBe("☆ Save");
+    const updated = JSON.parse(globalThis.localStorage.getItem(FAVORITES_KEY));
+    expect(updated.length).toBe(0);
+  });
+
+  test("favorites filter only includes saved exercises", async () => {
+    app.restore();
+    app = await mountApp({ favoritesStorage: JSON.stringify(["circle-tag-defense"]) });
+
+    const { document } = app;
+    clickOption(document, "favorites", "★ Favorites");
+
+    expect(document.querySelector("#match-count").textContent).toBe("1 drill fits");
+    const rows = document.querySelectorAll("#list .list-row");
+    expect(rows.length).toBe(1);
+    expect(rows[0].querySelector(".list-name").textContent).toContain("Circle Tag");
+  });
+
+  test("browse list indicates favorited items", async () => {
+    app.restore();
+    app = await mountApp({ favoritesStorage: JSON.stringify(["circle-tag-defense"]) });
+
+    const row = [...app.document.querySelectorAll("#list .list-row")].find((r) =>
+      r.querySelector(".list-name").textContent.includes("Circle Tag"),
+    );
+    expect(row).toBeDefined();
+    expect(row.querySelector(".list-fav-icon").textContent).toBe(" ★");
   });
 });

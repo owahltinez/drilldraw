@@ -274,8 +274,55 @@
     }
   }
 
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .card-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 1.4;
+  }
+
+  .card-btn:hover {
+    border-color: var(--ink-soft);
+    color: var(--ink);
+  }
+
+  .card-btn.is-fav {
+    background: var(--warn-bg);
+    border-color: var(--warn-ink);
+    color: var(--warn-ink);
+    font-weight: 600;
+  }
+
+  .list-fav-icon {
+    color: var(--ember);
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
   .eyebrow {
-    margin: 0 0 4px;
+    margin: 0;
     font-family: var(--mono);
     font-size: 11px;
     text-transform: uppercase;
@@ -442,6 +489,11 @@
     <div class="field">
       <span class="label">Focus</span>
       <div class="segmented" id="categories" role="group" aria-label="Skill focus"></div>
+    </div>
+
+    <div class="field">
+      <span class="label">Saved</span>
+      <div class="segmented" id="favorites" role="group" aria-label="Filter by saved favorites"></div>
     </div>
   </div>
 

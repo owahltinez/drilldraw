@@ -28,6 +28,7 @@ export const DEFAULT_FILTERS = {
   level: "any",
   category: "any",
   type: "any",
+  favoritesOnly: false,
 };
 
 /** True when the day's ball supply covers what the drill needs. */
@@ -51,10 +52,19 @@ export function groupingFits(grouping, players) {
 }
 
 /** Narrows the catalog down to drills that can actually be run today. */
-export function filterDrills(drills, filters) {
-  const { players, balls, level, category, type } = { ...DEFAULT_FILTERS, ...filters };
+export function filterDrills(drills, filters, favorites = null) {
+  const { players, balls, level, category, type, favoritesOnly } = { ...DEFAULT_FILTERS, ...filters };
+  const favSet =
+    favorites instanceof Set
+      ? favorites
+      : filters?.favorites instanceof Set
+        ? filters.favorites
+        : Array.isArray(filters?.favorites)
+          ? new Set(filters.favorites)
+          : null;
 
   return drills.filter((drill) => {
+    if (favoritesOnly && favSet && !favSet.has(drill.id)) return false;
     if (players && drill.minPlayers > players) return false;
     if (!groupingFits(drill.grouping, players)) return false;
     if (!ballsFit(drill.balls, balls)) return false;

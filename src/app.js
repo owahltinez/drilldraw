@@ -2,6 +2,7 @@ import DRILLS from "./drills.json";
 import { CATEGORIES, DEFAULT_FILTERS, filterDrills, pickRandom } from "./filters.js";
 
 const STORAGE_KEY = "drill-draw.filters";
+const FAVORITES_KEY = "drill-draw.favorites";
 const MAX_PLAYERS = 24;
 
 /** Human labels for tag values. Kept next to the UI, not in the data. */
@@ -37,6 +38,11 @@ const TYPE_OPTIONS = [
   { value: "drill", label: "Drills" },
 ];
 
+const FAVORITE_OPTIONS = [
+  { value: "all", label: "All" },
+  { value: "favorites", label: "★ Favorites" },
+];
+
 const CATEGORY_LABELS = {
   warmup: "Warm-up",
   dribbling: "Dribbling",
@@ -49,7 +55,8 @@ const CATEGORY_LABELS = {
   "team-play": "Team play",
 };
 
-const state = { ...DEFAULT_FILTERS, players: 8, current: null };
+const state = { ...DEFAULT_FILTERS, players: 8, current: null, favorites: "all" };
+let favorites = new Set();
 
 /** Creates an element with optional class and text in one call. */
 function el(tag, className, text) {
@@ -60,26 +67,55 @@ function el(tag, className, text) {
 }
 
 const dom = {
-  players: document.querySelector("#player-count"),
-  fewer: document.querySelector("#fewer"),
-  more: document.querySelector("#more"),
-  balls: document.querySelector("#balls"),
-  level: document.querySelector("#level"),
-  type: document.querySelector("#type"),
-  categories: document.querySelector("#categories"),
-  count: document.querySelector("#match-count"),
-  draw: document.querySelector("#draw"),
-  card: document.querySelector("#card"),
-  browse: document.querySelector("#browse"),
-  browseToggle: document.querySelector("#browse-toggle"),
-  list: document.querySelector("#list"),
+  get players() { return document.querySelector("#player-count"); },
+  get fewer() { return document.querySelector("#fewer"); },
+  get more() { return document.querySelector("#more"); },
+  get balls() { return document.querySelector("#balls"); },
+  get level() { return document.querySelector("#level"); },
+  get type() { return document.querySelector("#type"); },
+  get categories() { return document.querySelector("#categories"); },
+  get favorites() { return document.querySelector("#favorites"); },
+  get count() { return document.querySelector("#match-count"); },
+  get draw() { return document.querySelector("#draw"); },
+  get card() { return document.querySelector("#card"); },
+  get browse() { return document.querySelector("#browse"); },
+  get browseToggle() { return document.querySelector("#browse-toggle"); },
+  get list() { return document.querySelector("#list"); },
 };
+
+/** Restores favorite drill IDs from storage. */
+function loadFavorites() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
+    if (Array.isArray(saved)) favorites = new Set(saved);
+  } catch {
+    // A corrupt or blocked store starts with no favorites.
+    favorites = new Set();
+  }
+}
+
+/** Saves favorite drill IDs to storage. */
+function saveFavorites() {
+  try {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify([...favorites]));
+  } catch {
+    // Storage unavailable in private browsing mode.
+  }
+}
 
 /** Restores the filters from the last session so settings survive a reload. */
 function loadFilters() {
+  state.players = 8;
+  state.balls = DEFAULT_FILTERS.balls;
+  state.level = DEFAULT_FILTERS.level;
+  state.category = DEFAULT_FILTERS.category;
+  state.type = DEFAULT_FILTERS.type;
+  state.favorites = "all";
+  state.current = null;
+
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    for (const key of ["players", "balls", "level", "category", "type"]) {
+    for (const key of ["players", "balls", "level", "category", "type", "favorites"]) {
       if (saved[key] !== undefined) state[key] = saved[key];
     }
   } catch {
@@ -88,16 +124,51 @@ function loadFilters() {
 }
 
 function saveFilters() {
-  const { players, balls, level, category, type } = state;
+  const { players, balls, level, category, type, favorites: favFilter } = state;
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ players, balls, level, category, type }));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ players, balls, level, category, type, favorites: favFilter }));
   } catch {
     // Private browsing blocks writes; the app still works for this session.
   }
 }
 
+/** Toggles favorite status for a drill. */
+function toggleFavorite(drillId) {
+  if (favorites.has(drillId)) {
+    favorites.delete(drillId);
+  } else {
+    favorites.add(drillId);
+  }
+  saveFavorites();
+  render();
+  if (state.current && state.current.id === drillId) {
+    renderCard(state.current);
+  }
+}
+
+/** Resolves a drill from the current URL hash. */
+function getDrillFromHash() {
+  const hash = (globalThis.location?.hash || "").replace(/^#/, "");
+  if (!hash) return null;
+  return DRILLS.find((drill) => drill.id === hash) || null;
+}
+
+/** Syncs the drill ID into the URL hash for deep linking. */
+function syncHash(drill) {
+  if (!globalThis.location) return;
+  const newHash = drill ? `#${drill.id}` : "";
+  if (typeof globalThis.history?.replaceState === "function") {
+    const url = `${globalThis.location.pathname || ""}${globalThis.location.search || ""}${newHash}`;
+    globalThis.history.replaceState(null, "", url);
+  } else {
+    globalThis.location.hash = drill ? drill.id : "";
+  }
+}
+
 /** Builds one segmented control and wires it to a state key. */
 function buildSegmented(container, options, key) {
+  if (!container) return;
+  container.replaceChildren();
   for (const option of options) {
     const button = el("button", "seg", option.label);
     button.type = "button";
@@ -120,6 +191,7 @@ function buildCategories() {
 
 /** Marks the active button in every segmented control. */
 function paintSegmented(container, value) {
+  if (!container) return;
   for (const button of container.querySelectorAll(".seg")) {
     const active = button.dataset.value === String(value);
     button.classList.toggle("is-active", active);
@@ -149,14 +221,46 @@ function buildChips(drill) {
 }
 
 function renderCard(drill) {
+  if (!dom.card) return;
   dom.card.replaceChildren();
   if (!drill) {
     dom.card.hidden = true;
     return;
   }
 
+  const isFav = favorites.has(drill.id);
+  const topRow = el("div", "card-top");
   const eyebrow = el("p", "eyebrow", `${CATEGORY_LABELS[drill.category]} · ${drill.type === "game" ? "Game" : "Drill"}`);
-  dom.card.append(eyebrow, el("h2", "drill-name", drill.name), buildChips(drill), el("p", "prose", drill.description));
+
+  const actions = el("div", "card-actions");
+  const favBtn = el("button", `card-btn ${isFav ? "is-fav" : ""}`, isFav ? "★ Saved" : "☆ Save");
+  favBtn.type = "button";
+  favBtn.setAttribute("aria-pressed", String(isFav));
+  favBtn.setAttribute("aria-label", isFav ? "Remove from favorites" : "Save to favorites");
+  favBtn.addEventListener("click", () => toggleFavorite(drill.id));
+
+  const shareBtn = el("button", "card-btn", "🔗 Link");
+  shareBtn.type = "button";
+  shareBtn.setAttribute("aria-label", "Copy link to drill");
+  shareBtn.addEventListener("click", async () => {
+    const url = `${globalThis.location?.origin || ""}${globalThis.location?.pathname || ""}${globalThis.location?.search || ""}#${drill.id}`;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      }
+      shareBtn.textContent = "Copied!";
+      setTimeout(() => {
+        shareBtn.textContent = "🔗 Link";
+      }, 1500);
+    } catch {
+      // Clipboard access not available.
+    }
+  });
+
+  actions.append(favBtn, shareBtn);
+  topRow.append(eyebrow, actions);
+
+  dom.card.append(topRow, el("h2", "drill-name", drill.name), buildChips(drill), el("p", "prose", drill.description));
 
   // Coaching points are the part a coach reads out loud, so they stay a list.
   if (drill.coachingPoints.length > 0) {
@@ -173,17 +277,24 @@ function renderCard(drill) {
 }
 
 function renderList(matches) {
+  if (!dom.list) return;
   dom.list.replaceChildren();
   for (const drill of matches) {
     const item = el("li");
     const button = el("button", "list-row");
     button.type = "button";
-    button.append(el("span", "list-name", drill.name));
+
+    const nameSpan = el("span", "list-name", drill.name);
+    if (favorites.has(drill.id)) {
+      nameSpan.append(el("span", "list-fav-icon", " ★"));
+    }
+    button.append(nameSpan);
     button.append(el("span", "list-meta", `${CATEGORY_LABELS[drill.category]} · ${drill.minutes} min`));
     button.addEventListener("click", () => {
       state.current = drill;
+      syncHash(drill);
       renderCard(drill);
-      dom.card.scrollIntoView({ behavior: "smooth", block: "start" });
+      dom.card?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     item.append(button);
     dom.list.append(item);
@@ -191,6 +302,7 @@ function renderList(matches) {
 }
 
 function render() {
+  if (!dom.players) return;
   dom.players.textContent = state.players === 0 ? "Any" : String(state.players);
   dom.fewer.disabled = state.players === 0;
   dom.more.disabled = state.players === MAX_PLAYERS;
@@ -198,8 +310,10 @@ function render() {
   paintSegmented(dom.level, state.level);
   paintSegmented(dom.type, state.type);
   paintSegmented(dom.categories, state.category);
+  if (dom.favorites) paintSegmented(dom.favorites, state.favorites);
 
-  const matches = filterDrills(DRILLS, state);
+  const filterParams = { ...state, favoritesOnly: state.favorites === "favorites" };
+  const matches = filterDrills(DRILLS, filterParams, favorites);
   dom.count.textContent = matches.length === 1 ? "1 drill fits" : `${matches.length} drills fit`;
   dom.count.classList.toggle("is-empty", matches.length === 0);
   dom.draw.disabled = matches.length === 0;
@@ -209,29 +323,60 @@ function render() {
   if (state.current && !matches.some((drill) => drill.id === state.current.id)) {
     state.current = null;
     renderCard(null);
+    syncHash(null);
   }
 
-  dom.browseToggle.textContent = dom.browse.open ? "Hide all matches" : "Browse all matches";
+  if (dom.browseToggle && dom.browse) {
+    dom.browseToggle.textContent = dom.browse.open ? "Hide all matches" : "Browse all matches";
+  }
   renderList(matches);
   saveFilters();
 }
 
 function draw() {
-  const matches = filterDrills(DRILLS, state);
+  const filterParams = { ...state, favoritesOnly: state.favorites === "favorites" };
+  const matches = filterDrills(DRILLS, filterParams, favorites);
   state.current = pickRandom(matches, Math.random, state.current);
+  syncHash(state.current);
   renderCard(state.current);
   render();
 }
 
-buildSegmented(dom.balls, BALL_SUPPLY_OPTIONS, "balls");
-buildSegmented(dom.level, LEVEL_OPTIONS, "level");
-buildSegmented(dom.type, TYPE_OPTIONS, "type");
-buildCategories();
-dom.fewer.addEventListener("click", () => changePlayers(-1));
-dom.more.addEventListener("click", () => changePlayers(1));
-dom.draw.addEventListener("click", draw);
-dom.browse.addEventListener("toggle", () => {
-  dom.browseToggle.textContent = dom.browse.open ? "Hide all matches" : "Browse all matches";
-});
-loadFilters();
-render();
+export function init() {
+  buildSegmented(dom.balls, BALL_SUPPLY_OPTIONS, "balls");
+  buildSegmented(dom.level, LEVEL_OPTIONS, "level");
+  buildSegmented(dom.type, TYPE_OPTIONS, "type");
+  buildCategories();
+  if (dom.favorites) buildSegmented(dom.favorites, FAVORITE_OPTIONS, "favorites");
+  dom.fewer?.addEventListener("click", () => changePlayers(-1));
+  dom.more?.addEventListener("click", () => changePlayers(1));
+  dom.draw?.addEventListener("click", draw);
+  dom.browse?.addEventListener("toggle", () => {
+    if (dom.browseToggle && dom.browse) {
+      dom.browseToggle.textContent = dom.browse.open ? "Hide all matches" : "Browse all matches";
+    }
+  });
+
+  if (typeof window !== "undefined" && typeof window.addEventListener === "function") {
+    window.addEventListener("hashchange", () => {
+      const drill = getDrillFromHash();
+      state.current = drill;
+      renderCard(drill);
+      render();
+    });
+  }
+
+  loadFavorites();
+  loadFilters();
+
+  const initialDrill = getDrillFromHash();
+  if (initialDrill) {
+    state.current = initialDrill;
+    renderCard(initialDrill);
+  }
+
+  render();
+}
+
+init();
+

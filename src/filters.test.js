@@ -119,6 +119,17 @@ describe("filterDrills", () => {
     });
     expect(got.map((d) => d.id)).toEqual(["c"]);
   });
+
+  test("filters by favoritesOnly when favorites set is provided", () => {
+    const favorites = new Set(["b"]);
+    const got = filterDrills(drills, { ...DEFAULT_FILTERS, favoritesOnly: true }, favorites);
+    expect(got.map((d) => d.id)).toEqual(["b"]);
+  });
+
+  test("filters by favoritesOnly when passed inside filters object", () => {
+    const got = filterDrills(drills, { ...DEFAULT_FILTERS, favoritesOnly: true, favorites: ["a", "c"] });
+    expect(got.map((d) => d.id)).toEqual(["a", "c"]);
+  });
 });
 
 describe("pickRandom", () => {
