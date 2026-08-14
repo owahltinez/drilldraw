@@ -22,29 +22,11 @@ jobs:
 
       - run: bun install --frozen-lockfile
 
+      # src/build.test.js builds the site and asserts the things that matter
+      # once it is deployed: nothing fetched from the network at runtime, both
+      # icons embedded, a valid manifest whose icons exist at the sizes they
+      # claim, and a service worker that precaches what it says it does.
       - run: bun test
-
-      - run: bun run build
-
-      # The page must stay openable offline from a phone, so fail the build if
-      # anything sneaks in that would need the network at runtime.
-      - name: Check the page is self-contained
-        run: |
-          if grep -Eq '(src|href)="(https?:)?//' dist/index.html; then
-            echo "dist/index.html references an external URL:"
-            grep -Eo '(src|href)="(https?:)?//[^"]*"' dist/index.html
-            exit 1
-          fi
-
-      # Saved to a phone home screen, a page with no icon gets a screenshot.
-      - name: Check the icons are embedded
-        run: |
-          for pattern in 'rel="icon" href="data:image/svg' 'rel="apple-touch-icon" href="data:image/png'; do
-            if ! grep -q "$pattern" dist/index.html; then
-              echo "dist/index.html is missing an embedded icon: $pattern"
-              exit 1
-            fi
-          done
 
   deploy:
     name: Deploy to Pages
@@ -77,12 +59,15 @@ jobs:
 
       - run: bun run build
 
-      # The whole site is the one self-contained file; artifact.html is only for
-      # publishing elsewhere and is deliberately left out.
+      # The page, plus the manifest, service worker and icons that make it
+      # installable. artifact.html is only for publishing elsewhere, so it is
+      # kept out of the deployed site.
       - name: Stage the site
         run: |
           mkdir -p _site
-          cp dist/index.html _site/index.html
+          cp -R dist/. _site/
+          rm -f _site/artifact.html
+          ls -la _site
 
       - uses: actions/configure-pages@v5
 

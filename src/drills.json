@@ -2419,6 +2419,7 @@
     "category": "shooting",
     "type": "drill",
     "levels": [
+      "beginner",
       "intermediate",
       "advanced"
     ],

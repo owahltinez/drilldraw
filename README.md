@@ -7,16 +7,35 @@ them, how skilled they are, and how many basketballs made it to the gym.
 Filter, tap **Pick a drill**, run it. Filters are remembered, so between the three
 sessions on a practice day you usually only need to change the skill level.
 
+Live at **https://owahltinez.github.io/drilldraw/**
+
+## Installing it on a phone
+
+Open the link and use the browser's install prompt — "Add to Home Screen" on iOS
+Safari, "Install app" on Chrome. It launches without browser chrome and works with
+no signal at all, which is the usual state of a school gym.
+
 ## Running it
 
 ```sh
-bun test        # 184 tests: filter logic, catalog validation, UI wiring
-bun run build   # writes dist/index.html
+bun test        # filter logic, catalog validation, UI wiring, build output
+bun run build   # writes dist/
 ```
 
-`dist/index.html` is completely self-contained — no server, no network, no fonts to
-download. Open it from disk, or save it to a phone home screen and use it courtside
-offline.
+The build emits:
+
+```
+dist/index.html              the whole app — data, styles and script inlined
+dist/manifest.webmanifest    so a browser will offer to install it
+dist/sw.js                   service worker, precaches the app for offline use
+dist/icon-*.png              install icons, including a maskable one
+dist/artifact.html           the page without a document wrapper, for publishing elsewhere
+```
+
+`dist/index.html` needs nothing else to work: opened straight from disk it still
+runs, and the service worker registration is skipped there since a local file is
+already offline. The manifest and worker cannot be inlined — the spec requires them
+to be real same-origin files — so they sit beside it and only matter when hosted.
 
 ## Filters
 
@@ -74,12 +93,16 @@ src/app.js        UI wiring
 src/page.html     markup and styles
 src/icon.svg      the tab icon
 src/icon-180.png  the same icon rasterized, for the iOS home screen
+src/icon-*.png    install icons at the sizes a manifest requires
+src/manifest.webmanifest
+src/sw.js         service worker; __VERSION__ is stamped at build time
 build.js          inlines everything into dist/
 ```
 
-Both icons are embedded as data URIs at build time, so the page keeps working
-opened straight from disk where a sibling icon file would not resolve. CI fails if
-either icon or the page's self-containment goes missing.
+The tab and home screen icons are embedded as data URIs at build time, so the page
+keeps working opened straight from disk where a sibling file would not resolve.
+`src/build.test.js` fails the build if the page gains a network dependency, loses an
+icon, ships an invalid manifest, or the worker precaches a path that is not emitted.
 
 ## Sources
 

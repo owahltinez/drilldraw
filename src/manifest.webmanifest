@@ -1,0 +1,32 @@
+{
+  "name": "Drill Draw",
+  "short_name": "Drill Draw",
+  "description": "Pick a random basketball drill that fits the players, basketballs and skill level you actually have today.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf8",
+  "theme_color": "#fbfaf8",
+  "categories": ["sports", "education"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
