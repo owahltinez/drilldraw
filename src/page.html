@@ -125,23 +125,21 @@
     color: var(--ink-soft);
   }
 
+  /* Option rows fill the width when they fit and scroll sideways when they do
+     not, so a row is never left short of the panel edge. */
   .segmented {
     display: flex;
-    flex-wrap: wrap;
     gap: 6px;
     min-width: 0;
-  }
-
-  /* Long option rows scroll sideways on their own rather than wrapping. */
-  .segmented.scroller {
-    flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 4px;
     scrollbar-width: thin;
   }
 
   .seg {
-    flex: 1 1 auto;
+    /* Grow into spare space, but never shrink below the label — that is what
+       makes the row scroll instead of squashing the text. */
+    flex: 1 0 auto;
     min-height: 44px;
     padding: 0 13px;
     white-space: nowrap;
@@ -153,10 +151,6 @@
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
-  }
-
-  .scroller .seg {
-    flex: 0 0 auto;
   }
 
   .seg:hover {
@@ -432,7 +426,7 @@
 
     <div class="field">
       <span class="label">Skill level</span>
-      <div class="segmented scroller" id="level" role="group" aria-label="Skill level"></div>
+      <div class="segmented" id="level" role="group" aria-label="Skill level"></div>
     </div>
 
     <div class="field">
@@ -442,7 +436,7 @@
 
     <div class="field">
       <span class="label">Focus</span>
-      <div class="segmented scroller" id="categories" role="group" aria-label="Skill focus"></div>
+      <div class="segmented" id="categories" role="group" aria-label="Skill focus"></div>
     </div>
   </div>
 
