@@ -72,8 +72,14 @@ src/drills.json   the catalog (data only)
 src/filters.js    selection logic — pure functions, no DOM
 src/app.js        UI wiring
 src/page.html     markup and styles
+src/icon.svg      the tab icon
+src/icon-180.png  the same icon rasterized, for the iOS home screen
 build.js          inlines everything into dist/
 ```
+
+Both icons are embedded as data URIs at build time, so the page keeps working
+opened straight from disk where a sibling icon file would not resolve. CI fails if
+either icon or the page's self-containment goes missing.
 
 ## Sources
 

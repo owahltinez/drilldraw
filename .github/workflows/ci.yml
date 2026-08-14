@@ -36,6 +36,16 @@ jobs:
             exit 1
           fi
 
+      # Saved to a phone home screen, a page with no icon gets a screenshot.
+      - name: Check the icons are embedded
+        run: |
+          for pattern in 'rel="icon" href="data:image/svg' 'rel="apple-touch-icon" href="data:image/png'; do
+            if ! grep -q "$pattern" dist/index.html; then
+              echo "dist/index.html is missing an embedded icon: $pattern"
+              exit 1
+            fi
+          done
+
   deploy:
     name: Deploy to Pages
     needs: test
