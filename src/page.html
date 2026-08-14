@@ -1,0 +1,461 @@
+<title>Drill Draw</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  /* Light palette is the base; both dark states only redefine these tokens. */
+  :root {
+    --paper: #fbfaf8;
+    --surface: #ffffff;
+    --ink: #17191c;
+    --ink-soft: #5d6067;
+    --line: #e4e0d9;
+    --ember: #c25518;
+    --ember-ink: #ffffff;
+    --court: #2b5f4c;
+    --warn-bg: #fdf1e6;
+    --warn-ink: #8c4413;
+    --shadow: 0 1px 2px rgba(23, 25, 28, 0.06), 0 8px 24px rgba(23, 25, 28, 0.06);
+    --display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #121316;
+      --surface: #1a1c20;
+      --ink: #edebe7;
+      --ink-soft: #a2a5ac;
+      --line: #2c2f35;
+      --ember: #e8813f;
+      --ember-ink: #1a1006;
+      --court: #6fbb9b;
+      --warn-bg: #2c1f13;
+      --warn-ink: #f0b183;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #121316;
+    --surface: #1a1c20;
+    --ink: #edebe7;
+    --ink-soft: #a2a5ac;
+    --line: #2c2f35;
+    --ember: #e8813f;
+    --ember-ink: #1a1006;
+    --court: #6fbb9b;
+    --warn-bg: #2c1f13;
+    --warn-ink: #f0b183;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--display);
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 20px 18px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Masthead */
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .tagline {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+  }
+
+  /* Filter panel */
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: var(--shadow);
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* Without this, a scrolling row inside stretches the panel past the screen. */
+    min-width: 0;
+  }
+
+  .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+  }
+
+  .segmented {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  /* Long option rows scroll sideways on their own rather than wrapping. */
+  .segmented.scroller {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .seg {
+    flex: 1 1 auto;
+    min-height: 44px;
+    padding: 0 13px;
+    white-space: nowrap;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .scroller .seg {
+    flex: 0 0 auto;
+  }
+
+  .seg:hover {
+    border-color: var(--ink-soft);
+  }
+
+  .seg.is-active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
+  }
+
+  /* Stepper */
+  .stepper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .step-btn {
+    width: 52px;
+    height: 48px;
+    flex: 0 0 auto;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .step-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .step-value {
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 25px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Draw action */
+  .action {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #match-count {
+    margin: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--court);
+  }
+
+  #match-count.is-empty {
+    color: var(--warn-ink);
+  }
+
+  #draw {
+    min-height: 60px;
+    background: var(--ember);
+    color: var(--ember-ink);
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+  }
+
+  #draw:hover:not(:disabled) {
+    filter: brightness(1.07);
+  }
+
+  #draw:disabled {
+    background: var(--line);
+    color: var(--ink-soft);
+    cursor: not-allowed;
+  }
+
+  /* Drill card */
+  #card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--ember);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+
+  #card.is-fresh {
+    animation: rise 0.22s ease-out;
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #card.is-fresh {
+      animation: none;
+    }
+  }
+
+  .eyebrow {
+    margin: 0 0 4px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ember);
+  }
+
+  .drill-name {
+    margin: 0 0 12px;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    padding: 4px 9px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    color: var(--ink-soft);
+  }
+
+  .chip-warn {
+    background: var(--warn-bg);
+    border-color: transparent;
+    color: var(--warn-ink);
+  }
+
+  .chip-level {
+    border-style: dashed;
+  }
+
+  .prose {
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .sub-head {
+    margin: 20px 0 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+  }
+
+  .points {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--ink);
+  }
+
+  .points li::marker {
+    color: var(--ember);
+  }
+
+  /* Browse list */
+  details {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+
+  summary {
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--ink-soft);
+  }
+
+  #list {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-row {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 46px;
+    padding: 8px 2px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .list-row:hover {
+    color: var(--ember);
+  }
+
+  .list-name {
+    font-weight: 500;
+  }
+
+  .list-meta {
+    flex: 0 0 auto;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ember);
+    outline-offset: 2px;
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Drill Draw</h1>
+    <p class="tagline">Youth basketball</p>
+  </header>
+
+  <div class="panel">
+    <div class="field">
+      <span class="label" id="players-label">Players today</span>
+      <div class="stepper">
+        <button class="step-btn" id="fewer" type="button" aria-label="Fewer players">−</button>
+        <span class="step-value" id="player-count" aria-labelledby="players-label" role="status">8</span>
+        <button class="step-btn" id="more" type="button" aria-label="More players">+</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <span class="label">Basketballs</span>
+      <div class="segmented" id="balls" role="group" aria-label="Basketballs available"></div>
+    </div>
+
+    <div class="field">
+      <span class="label">Skill level</span>
+      <div class="segmented scroller" id="level" role="group" aria-label="Skill level"></div>
+    </div>
+
+    <div class="field">
+      <span class="label">Drills or games</span>
+      <div class="segmented" id="type" role="group" aria-label="Drills or games"></div>
+    </div>
+
+    <div class="field">
+      <span class="label">Focus</span>
+      <div class="segmented scroller" id="categories" role="group" aria-label="Skill focus"></div>
+    </div>
+  </div>
+
+  <div class="action">
+    <p id="match-count">&nbsp;</p>
+    <button id="draw" type="button">Pick a drill</button>
+  </div>
+
+  <article id="card" hidden></article>
+
+  <details id="browse">
+    <summary id="browse-toggle">Browse all matches</summary>
+    <ul id="list"></ul>
+  </details>
+</div>
+<!--APP_SCRIPT-->

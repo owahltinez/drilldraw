@@ -1,0 +1,2938 @@
+[
+  {
+    "id": "circle-tag-defense",
+    "name": "Circle Tag",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Two players start on opposite sides of the centre circle, one with a ball. The dribbler moves around the circle trying not to be tagged; the defender chases around the circle to tag them. Twenty seconds, then swap roles. Multiple pairs can use the key, the centre circle and any cone circle you make.",
+    "coachingPoints": [
+      "Dribbler changes direction to buy space rather than just running",
+      "Defender takes the shortest route — cutting back can beat the chase",
+      "Short bursts keep the intensity high"
+    ]
+  },
+  {
+    "id": "closeout-star-drill",
+    "name": "Closeout Star Drill",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Cones around the three-point line. Players start under the basket, sprint out to close out at the first cone with short choppy steps and a high hand, hold the stance for a beat, backpedal to the basket, then close out on the next cone. Work around all the cones. Progress by replacing cones with players passing the ball around the perimeter.",
+    "coachingPoints": [
+      "Sprint most of the way, then break down into short steps — do not glide in",
+      "High hand on the ball side, butt down, no leaving your feet",
+      "Call \"ball!\" on every closeout"
+    ]
+  },
+  {
+    "id": "defensive-mirrors",
+    "name": "Defensive Mirrors",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Pairs face each other across a court line, one attacker and one defender. The attacker slides along their line trying to break away with fakes and changes of pace; the defender mirrors to stay directly opposite. Fifteen seconds, then switch roles, then rotate pairs.",
+    "coachingPoints": [
+      "Low stance with hands wide and active",
+      "React to the hips, not the head fake",
+      "No ball involved, so use it on a day when balls are short"
+    ]
+  },
+  {
+    "id": "defensive-slide-relay",
+    "name": "Defensive Slide Relay",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Two teams, half of each on opposite sides of the court. The first player slides diagonally to a cone, drop steps, and slides back the other way, continuing down the floor while facing the baseline they started from the whole time. Next player goes when they finish. First team through wins.",
+    "coachingPoints": [
+      "Bad form means starting again — do not let the race break the stance",
+      "Slide to half court only for the youngest kids",
+      "Mix in sprints and backpedals between cones on later rounds"
+    ]
+  },
+  {
+    "id": "defensive-specialist-course",
+    "name": "Defensive Specialist Course",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Arrange four cones as a course. Players go one at a time: sprint and closeout to the first cone, backpedal around the cone behind it, slide to the opposite side, sprint and closeout again, and slide back before rejoining the line. Run it for three to five minutes.",
+    "coachingPoints": [
+      "One hundred percent effort on every sprint and slide or it is worthless",
+      "Hold each closeout for a full beat",
+      "Quality of footwork over speed through the course"
+    ]
+  },
+  {
+    "id": "defensive-stance-roll",
+    "name": "Defensive Stance and Roll",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Teach the stance: feet wider than shoulders, knees bent, chest up, hands active. Players then get in stance and roll a ball along a court line with one hand while sliding sideways to keep up with it, staying low the whole length. The rolling ball gives them instant feedback on whether they are actually staying down.",
+    "coachingPoints": [
+      "Backside down, chest up — no bending at the waist",
+      "Feet never cross and never click together",
+      "Follow the line so they can see their own path"
+    ]
+  },
+  {
+    "id": "freeze-defense",
+    "name": "Freeze Drill",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Pairs of similar ability play 1v1 from the top of the key, attacker with the ball. Every so often you blow the whistle and everybody freezes. Points are not scored by baskets: on each freeze, if the defender is not between their player and the basket the attacker gets a point, and if they are, the defender gets one. First to three, then swap roles.",
+    "coachingPoints": [
+      "Positioning over steals — the freeze is a snapshot of whether they were in the right place",
+      "Slide, never cross the feet",
+      "Freeze often, but let them actually compete in between"
+    ]
+  },
+  {
+    "id": "mirror-zigzag-1v1",
+    "name": "Zig-Zag Mirror 1v1",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Pairs start in the baseline corner, one ball. The attacker dribbles in a zig-zag towards the far baseline, changing speed and direction at each sideline; the defender slides to stay in front and force them wide. Start at half speed to warm up the stance, then go live. Switch roles coming back.",
+    "coachingPoints": [
+      "Defender's nose on the ball's inside shoulder, forcing them towards the sideline",
+      "Attacker must actually change pace, not jog through it",
+      "One hand mirrors the ball, the other feels for the body"
+    ]
+  },
+  {
+    "id": "musical-slide",
+    "name": "Musical Slide",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Set cones in a big circle, one fewer than the number of players. Everyone circles the cones in a proper defensive slide — low, feet wide, arms out — while the music plays or you clap. When it stops they must get to a cone and hold a defensive stance beside it. Whoever misses out helps remove another cone and rejoins next round.",
+    "coachingPoints": [
+      "Stay low the whole way round; no standing up between whistles",
+      "Feet never come together and never cross",
+      "Whistle a direction change occasionally so they slide both ways"
+    ]
+  },
+  {
+    "id": "no-paint-defense",
+    "name": "No Paint Defense",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Normal half-court game with one rule: if the ball is dribbled or passed into the paint, the defence loses a point and the ball goes back out. The defence's job is to keep everything on the perimeter with good positioning rather than gambling for steals.",
+    "coachingPoints": [
+      "Stay between your player and the basket — beaten defenders concede the paint",
+      "Help defenders sit in the gaps, one foot in the lane",
+      "Attackers should try hard to get in there or the drill teaches nothing"
+    ]
+  },
+  {
+    "id": "one-on-one-limited-dribbles",
+    "name": "1v1 with Two Dribbles",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Two players at the top of the key, the rest waiting at half court. The defender hands the ball to the attacker, who has a maximum of two or three dribbles to create a shot. After the shot the next player in line comes on as attacker, the attacker becomes the defender, and the defender joins the line.",
+    "coachingPoints": [
+      "Enforce the dribble limit strictly — it forces decisive attacking",
+      "Defender pressures tight without reaching or fouling",
+      "Reward good footwork and fakes out loud so the others notice"
+    ]
+  },
+  {
+    "id": "score-for-stops",
+    "name": "Score for Stops",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Two even teams in the half court. A team only scores by getting a defensive stop — a miss they rebound, a turnover, or a shot-clock violation on your count. Baskets are worth nothing. First team to five stops wins. Then play a round where baskets count double and see how the effort changes.",
+    "coachingPoints": [
+      "A stop is not a stop until the rebound is secured",
+      "Best drill there is for getting kids to care about defence",
+      "Keep the score out loud so it stays competitive"
+    ]
+  },
+  {
+    "id": "shell-drill",
+    "name": "Shell Drill",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 8,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Four attackers around the perimeter, four defenders matched up. Attackers pass the ball around with no dribbling at first; defenders adjust every pass — on-ball pressure, one pass away in deny, two passes away in help position. Add a dribble, then cuts, then make it live.",
+    "coachingPoints": [
+      "Every defender moves on the flight of the ball, not after the catch",
+      "Talk constantly: \"ball\", \"deny\", \"help\"",
+      "Do not add live play until the positions are right at walking pace"
+    ]
+  },
+  {
+    "id": "slide-backpedal-square",
+    "name": "Slide and Backpedal Square",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Set four cones in a square about fifteen feet on a side. Players sprint the first side, defensive slide the second, backpedal the third and slide the fourth, then go again in the opposite direction. Two to three laps each, next player starts on the second side.",
+    "coachingPoints": [
+      "Change of direction at each cone should be sharp and low",
+      "Chest stays up through the backpedal",
+      "Increase pace or duration to progress — the shape stays the same"
+    ]
+  },
+  {
+    "id": "three-v-three-closeout",
+    "name": "3v3 Live from a Closeout",
+    "category": "defense",
+    "type": "game",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Three attackers spread on the perimeter, three defenders in the paint with the ball. A defender passes out to the attacker they are guarding and sprints to close out; the possession is live from there. Play it out, then rotate the losing group off. Score by stops, not just baskets.",
+    "coachingPoints": [
+      "Defenders must close out under control and communicate their help",
+      "Attackers should attack the closeout immediately if it comes in hot",
+      "Keep the spacing wide so help defence has to actually rotate"
+    ]
+  },
+  {
+    "id": "zig-zag-slides",
+    "name": "Zig-Zag Slides",
+    "category": "defense",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Players line up in the baseline corner. Slide diagonally to the high post area, drop step to change direction, slide diagonally back to the sideline, and continue zig-zagging to the far baseline. Come back down the other side. Send the next player when the previous one is a third of the way.",
+    "coachingPoints": [
+      "Never cross the feet and never stand up",
+      "Push off the trail foot; the drop step turns the hips, not the shoulders",
+      "No ball needed, so this works on any equipment day"
+    ]
+  },
+  {
+    "id": "ball-scramble",
+    "name": "Ball Scramble",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Everyone spreads out with a ball. On the whistle they all drop their ball, sprint to half court and back — and while they are running you quietly remove one ball. Whoever comes back without one sits the round out. Shrink the area as numbers drop and keep going until one player is left.",
+    "coachingPoints": [
+      "Pure loose-ball reaction and hustle — reward the diving-in effort, not the winner only",
+      "Take two balls at a time to speed it up",
+      "Scoop the ball up under control rather than fumbling it away"
+    ]
+  },
+  {
+    "id": "change-of-pace-chase-down",
+    "name": "Change of Pace Chase Down",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Players spread across the baseline an arm's length apart, all with a ball. On the whistle they speed-dribble down the court; on the next whistle they stop the ball dead and hold a controlled stance, then explode again on the following whistle. Run three intervals of 20, 30 and 45 seconds.",
+    "coachingPoints": [
+      "The stop must be instant and balanced, not a gradual slowdown",
+      "Full speed means full speed — this is where change of pace is actually built",
+      "Alternate the hand used on each interval"
+    ]
+  },
+  {
+    "id": "collision-dribbling",
+    "name": "Collision Dribbling",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Squeeze the whole group into the paint or the centre circle, everyone with a ball. They dribble continuously and must avoid contact with anybody else — no knocking balls away, the challenge is navigating traffic. Tighten the space as they get better.",
+    "coachingPoints": [
+      "Do not allow everyone to circle in the same direction",
+      "Change hands to get around people rather than stopping",
+      "The safest version of chaos — perfect before you introduce knockout"
+    ]
+  },
+  {
+    "id": "cone-scramble",
+    "name": "Cone Scramble",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Spread cones around the court, one fewer than the number of players. Everyone dribbles around the court; on the whistle they must speed-dribble to a cone and put a foot beside it. The player left without one helps you take another cone away and rejoins on the next round, so the space keeps tightening.",
+    "coachingPoints": [
+      "Keep the head up and stay aware of where the free cones are",
+      "Nobody sits out — the player without a cone comes straight back in",
+      "Call a specific hand for some rounds"
+    ]
+  },
+  {
+    "id": "cone-tip-over",
+    "name": "Cone Tip-Over",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Scatter every cone you own upside-down across the half court. On go, players dribble around and tip cones back upright with their free hand, never stopping their dribble. Count how many the group flips in 60 seconds, then run it again and try to beat the number.",
+    "coachingPoints": [
+      "The dribble never stops — a stopped dribble means that cone does not count",
+      "Reach with the non-dribbling hand only",
+      "Second round: use the weak hand only"
+    ]
+  },
+  {
+    "id": "crossover-series",
+    "name": "Crossover Series",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Stationary then moving, on your call: front crossover, wide crossover, between-the-legs crossover, behind-the-back. Two lengths of the court for each move, alternating hands. Finish by letting players string two moves together on their own.",
+    "coachingPoints": [
+      "Ball stays below the knees on the crossover",
+      "Sell it with the shoulders and eyes, not just the hands",
+      "Snap the ball across — no lazy floaty crossovers"
+    ]
+  },
+  {
+    "id": "dribble-bulldog",
+    "name": "Dribble Bulldog",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 5,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "One bulldog stands at half court with a ball; everyone else lines up on the baseline with a ball. On \"bulldog!\" everyone dribbles to the far baseline. Anyone whose ball gets knocked away joins the bulldogs in the middle for the next crossing. Play until one player survives.",
+    "coachingPoints": [
+      "Bulldogs must keep dribbling too — it is much harder and keeps them honest",
+      "Encourage crossing in waves rather than one at a time",
+      "Bulldogs may not cross the sideline boundaries"
+    ]
+  },
+  {
+    "id": "dribble-knockout",
+    "name": "Dribble Knockout",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Everyone dribbles inside the three-point line. Players try to knock other balls out of the area while protecting their own. You are out if your ball leaves the area, you leave the area, you stop your dribble, or you travel. Shrink the boundary to the paint as numbers thin out. Last dribbler standing wins.",
+    "coachingPoints": [
+      "Head up — they cannot attack or protect if they are staring at the floor",
+      "Teach the off-arm shield and the retreat dribble before you start",
+      "Eliminated players dribble on the sideline instead of standing around"
+    ]
+  },
+  {
+    "id": "dribble-limbo",
+    "name": "Low Dribble Limbo",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 4,
+    "description": "Hold your arm out flat at chest height. Players dribble under it one at a time without touching your arm or losing the ball. Each round you drop your arm lower, forcing them into a proper low dribble with bent knees. Last player still getting under wins.",
+    "coachingPoints": [
+      "Bend the knees, do not bend at the waist",
+      "The ball should barely leave the floor at the lowest levels",
+      "Both hands across the rounds"
+    ]
+  },
+  {
+    "id": "dribble-relay-race",
+    "name": "Dribble Relay Race",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Split into two or three equal teams on the baseline, one ball per team. First player speed-dribbles to the far baseline and back, hands off, and goes to the back of the line. First team through everybody wins. Change the requirement each round: weak hand only, crossover at every line, zig-zag through cones, jump stop and pivot at half court.",
+    "coachingPoints": [
+      "A dropped ball must be recovered and the player continues from where they lost it",
+      "Uneven numbers are fine — the short team sends someone twice",
+      "Only needs one ball per team, so this works on a two-ball day"
+    ]
+  },
+  {
+    "id": "dribble-tag",
+    "name": "Dribble Tag",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Mark out the half court with cones. Everyone has a ball, including the two taggers. Taggers dribble and try to tag the others; anyone tagged steps to the sideline and keeps dribbling until the round ends. Last player untagged wins. Traveling or a double dribble counts as being tagged.",
+    "coachingPoints": [
+      "If the taggers cannot catch anyone, let them run without a ball",
+      "Shrink the area if it is taking too long",
+      "Switch taggers every 90 seconds so everyone gets a turn"
+    ]
+  },
+  {
+    "id": "dribble-weave",
+    "name": "Dribble Weave",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "per-player",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Groups of three on the baseline, everyone with their own ball. They run the weave pattern up the floor while all three dribble: each player crosses behind the next, so the group is constantly changing lanes without colliding. Finish with a layup at the far end and weave back.",
+    "coachingPoints": [
+      "Heads up — three dribblers crossing paths needs real awareness",
+      "Correct hand for the side of the floor they are on",
+      "Crossover on every change of direction as a progression"
+    ]
+  },
+  {
+    "id": "dribbling-lines",
+    "name": "Dribbling Lines",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Players line up along the baseline with a ball each; make two lines if you have more than eight. Call a move and everyone dribbles to half court or the far baseline performing it: right hand down and left hand back, crossovers every third dribble, between the legs, behind the back, low dribble, retreat dribble.",
+    "coachingPoints": [
+      "Heads up the whole way — hold up fingers for them to count",
+      "Push off the outside foot when changing direction",
+      "Write your list of moves down beforehand so you do not default to the same three"
+    ]
+  },
+  {
+    "id": "keep-it-bouncing",
+    "name": "Keep It Bouncing",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Everyone dribbles inside a marked area and tries to tap other players' balls away while keeping their own alive. Losing your ball costs you five push-ups or a quick lap, then you come straight back in. Nobody is eliminated, so the whole group keeps working for the full six minutes.",
+    "coachingPoints": [
+      "Heads up and both arms working — attacking other balls is what makes them better",
+      "Shrink or widen the area to control how chaotic it gets",
+      "Use this instead of knockout when you do not want kids standing on the sideline"
+    ]
+  },
+  {
+    "id": "kill-the-grass",
+    "name": "Kill the Grass",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 4,
+    "description": "The floor is a lawn and every dribble kills a patch of grass. Players spread out and try to pound the ball on as much of the court as possible in 45 seconds, covering ground while keeping control. Nobody may dribble in the same spot twice.",
+    "coachingPoints": [
+      "Hard dribbles — soft ones do not kill grass",
+      "Great excuse to get them looking up and moving into space",
+      "Call out a hand to use for each round"
+    ]
+  },
+  {
+    "id": "mirror-dribble",
+    "name": "Mirror Dribble",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Partners start on opposite baselines facing each other, each with a ball. On the whistle both speed-dribble towards each other; at centre court they drop into a controlled dribble and perform the move you called — crossover, hesitation, step-back — then explode back into a speed dribble to the far baseline. Run it three to six times, alternating hands.",
+    "coachingPoints": [
+      "Explode out of the move — that transition is the whole point",
+      "Heads up the entire way; they are dribbling straight at somebody",
+      "Call the move before the whistle so they have to remember it"
+    ]
+  },
+  {
+    "id": "mr-fox",
+    "name": "What Time Is It, Mr. Fox?",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "You are the fox at one baseline with your back turned; players start on the far baseline with a ball each. They shout \"What time is it, Mr. Fox?\" and you answer \"three o'clock,\" so they take three dribbles forward. When you answer \"lunchtime!\" you turn and chase — anyone tagged before getting back to their baseline becomes a fox with you.",
+    "coachingPoints": [
+      "Count dribbles out loud so the number of dribbles is exact",
+      "A lost ball counts as being caught",
+      "Great first game for five and six year olds"
+    ]
+  },
+  {
+    "id": "partner-dribble-tag",
+    "name": "Partner Tag",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Each pair works in its own third of the court, both players dribbling. One starts as tagger. Every time a tag lands, the roles instantly swap. Play for 90 seconds; whoever has the most tags when time is called wins the pair.",
+    "coachingPoints": [
+      "Scales to any number and keeps everyone moving constantly",
+      "Award tags only when they are under control, not from a wild swipe",
+      "Rotate partners each round so nobody is stuck in a mismatch"
+    ]
+  },
+  {
+    "id": "pound-dribble-series",
+    "name": "Pound, In-and-Out, Back-and-Forth",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Each player takes a spot with a ball. Thirty seconds of hard pound dribbles at knee height with the right hand, then left. Then in-and-out dribbles (fake the crossover, keep the same hand), then back-and-forth front-to-back dribbles. Repeat the set on the move at walking pace.",
+    "coachingPoints": [
+      "Pound it hard — a weak dribble is a stolen dribble",
+      "Wrist and forearm, not the whole arm",
+      "Free arm stays up as a shield"
+    ]
+  },
+  {
+    "id": "protect-the-ball-1v1",
+    "name": "1v1 Small Space",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Box off an area roughly the size of the paint with four cones. The offensive player must keep a live dribble inside it for 20 seconds while the defender pressures and tries to force a turnover or a stopped dribble. Swap roles and keep score of successful survivals.",
+    "coachingPoints": [
+      "Retreat dribble and pivot away rather than dribbling into trouble",
+      "Off arm shields but does not push off",
+      "Defender stays on balance — no wild swipes that give up position"
+    ]
+  },
+  {
+    "id": "red-light-green-light",
+    "name": "Red Light, Green Light",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Everyone lines up on the baseline in a triple-threat stance with a ball. On \"green light\" they dribble forward, on \"red light\" they stop with a two-foot jump stop and hold it. Anyone who travels or loses the ball goes back five steps. First to the far baseline wins. Add \"pivot left\" and \"pivot right\" calls once they have the stop down.",
+    "coachingPoints": [
+      "Land the jump stop low with knees bent, not standing tall",
+      "Do not rise out of the stance when pivoting",
+      "Yellow light means slow-motion dribble — good for change of pace"
+    ]
+  },
+  {
+    "id": "scarecrow-tag",
+    "name": "Scarecrow Tag",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 5,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Two taggers without balls chase everyone else, who are dribbling inside the half court. A tagged player becomes a scarecrow: legs wide, ball held on top of their head. They are freed when another dribbler rolls their ball between the scarecrow's legs, then both play on. Change taggers every couple of minutes.",
+    "coachingPoints": [
+      "The ball must be rolled through the legs, not thrown",
+      "Freeing a teammate means picking the ball up — remind them they can dribble away after",
+      "Add a third tagger if the group is large"
+    ]
+  },
+  {
+    "id": "sharks-and-minnows",
+    "name": "Sharks and Minnows",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 5,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "One or two sharks start at half court without a ball. The minnows line up on the baseline with a ball each and try to dribble to the far baseline without having their ball stolen or knocked out of bounds. Any minnow who loses their ball becomes a shark for the next round. Keep going until one minnow is left; they are the first shark next time.",
+    "coachingPoints": [
+      "Minnows should change speed and direction rather than sprinting blindly",
+      "Sharks go for the ball, not the player",
+      "As sharks pile up, minnows learn to protect and pick a lane"
+    ]
+  },
+  {
+    "id": "simon-says-dribbling",
+    "name": "Simon Says Dribbling",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Players spread out with a ball each and dribble in place. Call out moves — \"Simon says switch hands,\" \"Simon says dribble low,\" \"Simon says spin around.\" If you leave off \"Simon says\" and they do it anyway, they owe you five push-ups or a lap and rejoin immediately.",
+    "coachingPoints": [
+      "Nobody sits out — penalties are quick so they keep dribbling",
+      "Sneak in real teaching cues: low stance, head up, ball protected",
+      "Speed up your calls to raise the pressure"
+    ]
+  },
+  {
+    "id": "snake-dribbling",
+    "name": "Snake Dribbling",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "The whole group stands in a long winding line, each holding a ball — that is the snake. The player at the tail dribbles low, head up, weaving through everybody until they reach the front and stop. Then the new tail goes. Everyone in the line stays put and can reach for the ball as it passes.",
+    "coachingPoints": [
+      "Low dribble and head up, or they will kick somebody's heels",
+      "Off arm protects while weaving past the reaching hands",
+      "Form two snakes and race them if you have a big group"
+    ]
+  },
+  {
+    "id": "staring-drill",
+    "name": "Staring Contest Dribble",
+    "category": "dribbling",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Partners stand facing each other, each dribbling in place, and hold a staring contest. Look down at your ball, lose control, blink, or look away and your partner gets a point. First to five wins. Run it again with the weak hand only.",
+    "coachingPoints": [
+      "The simplest way there is to get a beginner's eyes off the ball",
+      "Advanced pairs can move left, right and backwards while staring",
+      "Switch partners often so it stays a contest"
+    ]
+  },
+  {
+    "id": "two-ball-partner-dribbling",
+    "name": "Two-Ball Partner Dribbling",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Partners stand about ten feet apart, each with a ball. Both dribble with the right hand, then on the call both bounce-pass with the left hand at the same time, catch, and keep dribbling. Progress to a designated move before each pass, then to one partner dribbling and passing while the other stays live.",
+    "coachingPoints": [
+      "Crisp pass and immediate control of the incoming ball",
+      "Eyes on your partner, not on either ball",
+      "Slow down until they get a rhythm, then speed it up"
+    ]
+  },
+  {
+    "id": "two-one-zero-moves",
+    "name": "2-1-0 Move Progression",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Pick one dribble move. Players first perform it at two-count speed while walking, then at one count while jogging, then at full speed at game pace with no count. Three lengths of the floor per stage. Move on to the next move once the group is clean at full speed.",
+    "coachingPoints": [
+      "Do not let them skip to full speed before the shape is right",
+      "One move per session gets learned; six moves per session get forgotten",
+      "Finish each length with a change of pace out of the move"
+    ]
+  },
+  {
+    "id": "zig-zag-cone-dribble",
+    "name": "Zig-Zag Cone Dribble",
+    "category": "dribbling",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Set five or six cones in a zig-zag from baseline to half court. Players go one at a time (or in a staggered line with two or three balls), changing hands at every cone with a crossover, then run it again using between-the-legs, then behind-the-back.",
+    "coachingPoints": [
+      "Change direction sharply off the outside foot, do not curve around the cone",
+      "Change of pace matters more than the fancy move — slow, then explode",
+      "Widen the cones for beginners, tighten them for older players"
+    ]
+  },
+  {
+    "id": "block-to-block-finishing",
+    "name": "Block-to-Block Finishing",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Start on one block with the ball. Take one hard dribble across the paint to the other block and finish off two feet, rebound, then go back the other way. Ten makes, five from each side, or 30 to 60 seconds per player. Split across two baskets if you have them.",
+    "coachingPoints": [
+      "One dribble only — this is about power, not a long drive",
+      "Finish on the far side of the rim, using the glass",
+      "Keep the ball high through the gather"
+    ]
+  },
+  {
+    "id": "chase-down-layups",
+    "name": "Chase Down Layups",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "pairs",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "An offensive line and a defensive line at each end. Give the attacker a couple of steps head start, then on \"go\" both sprint the full court: the attacker finishes under pressure while the defender chases and contests without fouling. The next pair starts from the end where the ball finished.",
+    "coachingPoints": [
+      "No fouling and no undercutting — safety first, call it tight",
+      "Attackers should finish on the far side of the rim away from the chaser",
+      "Switch sides so they finish with both hands"
+    ]
+  },
+  {
+    "id": "competitive-full-court-layups",
+    "name": "Competitive Full Court Layups",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "One player waits at the far basket with a ball while everyone else lines up at the other end, front player with a ball. On the whistle both drive for a layup. The far player rebounds and outlets to the next in line; the near player rebounds their own shot and dribbles to the far end for another layup. Set a target — twenty makes in two minutes.",
+    "coachingPoints": [
+      "As few dribbles as possible down the floor",
+      "Push the ball ahead rather than dribbling beside the body",
+      "Run it again on the left side with left-handed finishes"
+    ]
+  },
+  {
+    "id": "drag-race",
+    "name": "Drag Race",
+    "category": "finishing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two teams on opposite baselines, players numbered off so each has a rival with the same number on the other side. Put two balls at centre court. Call a number: those two sprint out, grab a ball, dribble to their own basket and try to score first. A point for the team that scores first.",
+    "coachingPoints": [
+      "Scoop the ball at speed rather than stopping over it",
+      "Push the ball ahead on the dribble — this is a race",
+      "Call numbers out of order so everyone stays ready"
+    ]
+  },
+  {
+    "id": "euro-step",
+    "name": "Euro Step Finishing",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Put a cone just outside the paint as a stand-in defender. Players attack it, pick the ball up, step one way past the cone and then plant and step the other way to finish on the far side of the rim. Walk it through first, then run it at speed, both directions.",
+    "coachingPoints": [
+      "Two steps only — the pickup happens before the first step",
+      "Sell the first step with the shoulders",
+      "Finish away from where the defender was, high off the glass"
+    ]
+  },
+  {
+    "id": "layup-lines",
+    "name": "Layup Lines",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two lines outside the key, one shooting and one rebounding. Players dribble in and finish with a layup using the correct footwork — outside foot, inside knee up — off the right side first, then swap the lines and go left. Rebounders pass out to the next shooter.",
+    "coachingPoints": [
+      "Right hand off the right side, left hand off the left, no exceptions",
+      "Lay it high off the top corner of the square, do not fling it at the rim",
+      "Two or three balls is plenty — the line keeps them moving"
+    ]
+  },
+  {
+    "id": "long-layups",
+    "name": "Long Layups",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two lines at half court, one on each side, one ball each. The front player speed-dribbles down the right side and finishes a fast-break layup, grabs their own rebound, takes two dribbles the other way and throws a long overhand baseball pass to the front of the opposite line. That player goes next. Count the team's makes.",
+    "coachingPoints": [
+      "Head up on the speed dribble, ball pushed out in front",
+      "Lead the baseball pass out in front of the next player",
+      "Shorten the pass distance for younger kids"
+    ]
+  },
+  {
+    "id": "mikan-drill",
+    "name": "Mikan Drill",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 5,
+    "description": "Stand under the rim. Shoot a right-handed layup off the backboard without letting the ball touch the floor, catch it, step across under the hoop and shoot a left-handed layup, and keep alternating in a continuous rhythm. Twenty makes, or 45 seconds per player.",
+    "coachingPoints": [
+      "Ball never touches the ground — catch and go straight back up",
+      "Use the square on the backboard as the target every time",
+      "Feet keep moving under the rim; do not stand flat-footed"
+    ]
+  },
+  {
+    "id": "ninja-warrior",
+    "name": "Ninja Warrior",
+    "category": "finishing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Two teams, one at each basket, with one or two balls each. As a team they must complete the course in order: ten right-hand layups, ten left-hand layups, five free throws, two three-pointers, one half-court shot. Players rebound their own shot and pass to the next in line. First team through the whole course wins.",
+    "coachingPoints": [
+      "Scale the numbers to the group size so a round takes five minutes, not fifteen",
+      "Everyone must take a turn at each stage",
+      "The half-court shot at the end is the fun part — let them all try it"
+    ]
+  },
+  {
+    "id": "one-v-one-chase-layup",
+    "name": "1v1 Layup with Chase",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Pairs start at half court, attacker with the ball a stride ahead of the defender who starts with a hand on their back. On the whistle the attacker drives to the rim and finishes, the defender recovers and contests legally. Swap after each rep, first to five makes wins.",
+    "coachingPoints": [
+      "Attacker protects the ball with their body between it and the defender",
+      "Defender takes the shortest angle to the rim, not to the ball",
+      "Contest with the inside hand, straight up"
+    ]
+  },
+  {
+    "id": "pivot-finishing-21",
+    "name": "Pivot and Finish to 21",
+    "category": "finishing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Players catch the ball on the block with their back to the basket, pivot into a finish — drop step, reverse pivot and shoot, or reverse pivot with a shot fake and drive. Two points for a make with correct footwork, one point if the footwork breaks down. First to 21 wins.",
+    "coachingPoints": [
+      "The pivot foot does not move — call it every time it slides",
+      "Chin the ball on the catch before making a move",
+      "Announce which move you are doing before you catch"
+    ]
+  },
+  {
+    "id": "power-layup",
+    "name": "Power Layup",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Same setup as layup lines, but players gather the ball and jump off two feet instead of one, exploding straight up into the finish. Teach it as the finish to use when there is contact. Both sides of the rim.",
+    "coachingPoints": [
+      "Two-foot gather, chest up, absorb contact and finish through it",
+      "Ball stays high — no dipping it down where it can be stripped",
+      "Land balanced, ready to rebound your own miss"
+    ]
+  },
+  {
+    "id": "pressure-layups",
+    "name": "Pressure Layups",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Four lines at half court, two on each side, with a ball in each inside line. The inside player passes to the outside player, who drives the length for a layup; the passer then sprints to chase them down and pressure the shot. Both players swap to the lines on the other side afterwards. Count makes over five minutes.",
+    "coachingPoints": [
+      "Shield the ball from the chaser with your body on the finish",
+      "Chaser pressures hard but never fouls or undercuts",
+      "Push the ball out front to actually speed-dribble"
+    ]
+  },
+  {
+    "id": "tip-drill",
+    "name": "Tip Drill",
+    "category": "finishing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 5,
+    "description": "Standing close to the backboard, the player tosses the ball off the board and tips it back against the board repeatedly without catching it — single hand each side, five right then five left, then alternating hands. Finish the set with a layup. A wall works if the baskets are busy.",
+    "coachingPoints": [
+      "Fingertips and soft touch, arms extended high",
+      "Stay on the balls of the feet",
+      "Great conditioning for hands and shoulders in a small space"
+    ]
+  },
+  {
+    "id": "box-drill-footwork",
+    "name": "The Box Drill",
+    "category": "footwork",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Players start under the basket and self-pass the ball out to the elbow, chase it down and complete a move on the catch: drop step and drive, reverse pivot and shoot, reverse pivot with a shot fake and a drive baseline or middle. Work both elbows and both blocks.",
+    "coachingPoints": [
+      "The self-pass must be crisp so the catch is game-realistic",
+      "Land the catch in a stance with the ball chinned",
+      "One move per rep, executed properly, beats improvising"
+    ]
+  },
+  {
+    "id": "explode-pivot-pass",
+    "name": "Explode, Pivot, Pass",
+    "category": "footwork",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Groups of three behind a sideline, one ball. The first player starts in triple threat, takes two explosive dribbles out, jump stops under control, pivots 180 degrees back to the group, chest passes to the next player, and jogs to the back. Run for three minutes, varying the pivot type.",
+    "coachingPoints": [
+      "Full speed on the two dribbles, full control on the stop — that contrast is the drill",
+      "Receiver is low with target hands before the pass comes",
+      "Alternate front and reverse pivots off each foot"
+    ]
+  },
+  {
+    "id": "four-corners",
+    "name": "Four Corners",
+    "category": "footwork",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Four cones in a large square with one cone in the middle. Split into four lines, one at each corner, front players with a ball. On your call they dribble towards the centre cone, jump stop a few feet short, pivot in the direction you named, pass to the next line along, and join the back of it. Nobody moves until the next \"go\".",
+    "coachingPoints": [
+      "Everyone pivots the same direction or the passes collide",
+      "Small, low jump stops — not a leap",
+      "Call both pivot types and both directions across the reps"
+    ]
+  },
+  {
+    "id": "jump-stop-pivots",
+    "name": "Jump Stops and Pivots",
+    "category": "footwork",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Players spread on the baseline with a ball. Two hard dribbles, jump stop on both feet at the same time, then a front pivot, then repeat to the far baseline. Come back doing reverse pivots. Then run it calling a random pivot direction as they stop.",
+    "coachingPoints": [
+      "Both feet land together — a one-two landing is a different skill and a travel risk here",
+      "Chin the ball as you stop so it cannot be stripped",
+      "Stay low; the biggest error is standing up to pivot"
+    ]
+  },
+  {
+    "id": "pivot-21",
+    "name": "Pivot 21",
+    "category": "footwork",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Two teams in lines either side of the basket, with a ball resting on the floor by a cone just outside the three-point line for each team. On your call the front player sprints to the ball, picks it up, pivots the way you specified, dribbles in and finishes a layup, then rebounds and returns the ball to the cone before rejoining the line. First team to 21 makes wins.",
+    "coachingPoints": [
+      "Stay low picking the ball up and square the feet on the pivot",
+      "Specify the pivot beforehand — front pivot left foot, reverse right foot, and so on",
+      "It gets chaotic and fast; do not let the footwork get sloppy for the sake of speed"
+    ]
+  },
+  {
+    "id": "triple-threat-rips",
+    "name": "Triple Threat Rips",
+    "category": "footwork",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Everyone holds a ball in a triple-threat stance in their own space. On your call they rip the ball low across their body and step through with a long jab step, then recover to the stance. Rip high, rip low, jab and go, jab and pull back. Twenty reps each direction.",
+    "coachingPoints": [
+      "Ball rips through fast and stays tight to the body",
+      "The jab step is long and low, not a little tap",
+      "Eyes up on the imaginary defender throughout"
+    ]
+  },
+  {
+    "id": "circle-passing",
+    "name": "Circle Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Groups of four to six form a circle with one player in the middle and two balls in play — one with the middle player, one on the outside. The middle player passes to the outside player just to the right of whoever holds the other ball, and that player immediately passes theirs into the middle. Three laps around the circle, then swap the middle player. Time it.",
+    "coachingPoints": [
+      "Peripheral vision — they have to track two balls at once",
+      "Call the name of the player you are passing to next",
+      "Alternate pass types to keep it fresh"
+    ]
+  },
+  {
+    "id": "clap-passing",
+    "name": "Clap Passing",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "The group forms a circle around you. Pass to players at random; each one must clap once before catching the ball. Drop the pass, forget to clap, or clap when you only fake the pass and they sit at their spot until the next round. Add a second ball once they are sharp.",
+    "coachingPoints": [
+      "Ready hands up before the pass comes",
+      "Your pass fakes are what make it a game — sell them",
+      "Fast rounds so anyone sitting is only out for a moment"
+    ]
+  },
+  {
+    "id": "continuous-three-on-two",
+    "name": "Continuous 3-on-2",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 7,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Three attackers start at half court against two defenders at one end. They attack until they score or lose it; the two defenders then outlet to the waiting player on the sideline and go the other way as a new three, while two of the previous attackers stay back as the next defenders and the third joins the line. Run it continuously for six to eight minutes.",
+    "coachingPoints": [
+      "Fill three lanes in transition — wide, wide, and the middle",
+      "Attack the front defender's inside shoulder to make them commit",
+      "Defenders play the ball and the first pass, not one man each"
+    ]
+  },
+  {
+    "id": "count-em-up",
+    "name": "Count 'Em Up",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 10,
+    "description": "Two even teams matched up one-on-one in the half court, one ball. The offence must complete a set number of passes — start at five — with no dribbling and no shooting, while each defender guards their own player. Complete the count for a point, then teams swap roles. First to five points wins.",
+    "coachingPoints": [
+      "Cutting and screening for each other is the only way to get open",
+      "Match your best defender against their best passer",
+      "Raise the pass target as they get better at it"
+    ]
+  },
+  {
+    "id": "give-and-go",
+    "name": "Give and Go",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Line up at the wing; you or a player stands at the top of the key as the passer. The player passes to the passer, cuts hard to the basket, receives the return pass and finishes with a layup. Run it from the wing, from the top and from the baseline.",
+    "coachingPoints": [
+      "Cut immediately after passing — the pause is what kills it",
+      "Cut in front of the imaginary defender, not behind",
+      "Call for the ball with a target hand"
+    ]
+  },
+  {
+    "id": "hot-potato-circle",
+    "name": "Hot Potato Circle",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 4,
+    "description": "Group stands in a circle about ten feet across, one ball. The ball must be passed to someone who has not received it yet, as fast as possible, until everyone has touched it — then time the group and challenge them to beat their own record. A drop resets the clock.",
+    "coachingPoints": [
+      "Call the name of the person you are passing to",
+      "Two hands on the catch even when they are rushing",
+      "Add a second ball once they are quick and confident"
+    ]
+  },
+  {
+    "id": "keep-away",
+    "name": "Keep Away",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "One or two defenders in the middle, everyone else spread inside the three-point line with one ball. The outside players pass the ball around without dribbling; defenders try to deflect or steal. Swap the defenders every minute or whenever they get a steal.",
+    "coachingPoints": [
+      "Move after you pass — standing still makes the next pass impossible",
+      "Quick decisions, no holding the ball for more than two seconds",
+      "Spacing is everything: spread to the edges of the area"
+    ]
+  },
+  {
+    "id": "machine-gun-passing",
+    "name": "Machine Gun Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Three players stand shoulder to shoulder about five feet apart; a fourth faces them from twelve to fifteen feet away. Two balls in play. The single player passes to one of the three and the same instant receives a pass back from another, working across the line as fast as they can. Twenty seconds, then rotate.",
+    "coachingPoints": [
+      "Snap passes, chest height — count only passes between the waist and the head",
+      "Exactly four players; more than that and everyone gets confused",
+      "As fast as they can go without the passes falling apart"
+    ]
+  },
+  {
+    "id": "middle-man-passing",
+    "name": "Middle Man Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Two outside players with a ball each, one player in the middle. An outside player passes in; the middle player returns it instantly, pivots to face the other side, receives that ball, returns it, and pivots back. Thirty seconds of nonstop work, then rotate the middle player.",
+    "coachingPoints": [
+      "The middle player never stops moving — that is the workout",
+      "Use a specific pivot to turn: front pivot, drop step, reverse",
+      "Outside players must be accurate or the rhythm dies"
+    ]
+  },
+  {
+    "id": "monkey-in-the-middle",
+    "name": "Monkey in the Middle",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Two passers stand fifteen feet apart with one defender between them. The passers must complete passes without the defender deflecting or intercepting; no lobbing it over the top. Whoever throws the ball the defender steals becomes the new monkey.",
+    "coachingPoints": [
+      "Fake one pass to make the next one — pass fakes beat strong arms",
+      "Passers may move their feet along a line to create an angle",
+      "Bounce passes work best against a defender with high hands"
+    ]
+  },
+  {
+    "id": "outlet-pass-rebounding",
+    "name": "Rebound and Outlet",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 7,
+    "description": "You shoot deliberately off the rim. A player boxes out, grabs the rebound with two hands, lands wide, pivots to face the sideline and hits a receiver breaking to the wing, who dribbles up the floor. Rotate rebounder to receiver to line.",
+    "coachingPoints": [
+      "Chin the ball on the catch — elbows out, no bringing it down low",
+      "Turn to the outside of the floor, never pivot into the middle",
+      "Receiver calls \"ball!\" loudly and gives a target"
+    ]
+  },
+  {
+    "id": "partner-passing",
+    "name": "Partner Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Partners face each other six to ten feet apart, one ball between them. Call the pass: chest, bounce, overhead, then one-handed push pass off each hand. Twenty reps of each, then step the pairs further apart and repeat.",
+    "coachingPoints": [
+      "Step into the pass and finish with thumbs down on the chest pass",
+      "Bounce pass hits the floor about two thirds of the way to the partner",
+      "Receivers give a target with their hands and catch with two hands"
+    ]
+  },
+  {
+    "id": "pass-and-switch",
+    "name": "Pass and Switch",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 8,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Pair everyone up and spread the pairs around the court, partners standing apart from each other. Two balls start in the circuit. Every player passes to their right and then immediately sprints to swap places with their partner. The balls keep travelling, so players have to beat the ball to their new spot.",
+    "coachingPoints": [
+      "Step towards the receiver on the pass, extend the hands on the catch",
+      "Sprint the switch — jogging it and the ball arrives before you do",
+      "Reward two minutes without a drop"
+    ]
+  },
+  {
+    "id": "passing-line-relay",
+    "name": "Passing Line Relay",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Two teams line up at midcourt about six feet apart, one ball each. The first player passes to the second, who must pivot a full 180 degrees using correct footwork before passing on down the line. At the end the ball works its way back to the front. A dropped ball or a botched pivot means the team restarts from the front. Fastest team wins.",
+    "coachingPoints": [
+      "One foot stays planted — this is a pivot drill disguised as a race",
+      "Alternate which foot they pivot on between rounds",
+      "Change the required pass type each round"
+    ]
+  },
+  {
+    "id": "passing-on-the-move",
+    "name": "Passing on the Move",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Pairs start on the baseline about fifteen feet apart with one ball. They run the length of the floor passing back and forth, no dribbling allowed, and the ball may not touch the ground. Come back down the other side. Count completed lengths without a drop.",
+    "coachingPoints": [
+      "Lead the receiver — pass to where they are going, not where they are",
+      "Catch, then pass immediately without gathering",
+      "Widen the gap as they improve"
+    ]
+  },
+  {
+    "id": "passing-tag",
+    "name": "Passing Tag",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Split into two groups. Group one spreads across the half court, each with a ball, and must keep dribbling. Group two starts on the baseline with one ball between them — only the player holding that ball may tag, and they cannot dribble, so they must pass to each other to hunt people down. Time how long it takes to tag everyone, then switch.",
+    "coachingPoints": [
+      "Forces the taggers to pass ahead and cut off angles — real defensive thinking",
+      "Dribblers who travel or lose the ball count as tagged",
+      "Loud communication from the chasing team is what makes it fast"
+    ]
+  },
+  {
+    "id": "protect-the-cone",
+    "name": "Protect the Cone",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Players form a circle with one defender and a single cone in the middle. The circle passes one ball around — bounce and chest passes only — looking for a chance to knock the cone over. The defender in the middle tries to protect it. Whoever knocks it down takes over as the protector.",
+    "coachingPoints": [
+      "Pass fakes and quick reversals beat the defender, not hard throws",
+      "Talk to each other — the open shot at the cone comes from a fast extra pass",
+      "Add a second cone or a second defender to change the difficulty"
+    ]
+  },
+  {
+    "id": "shotgun-passing",
+    "name": "Shotgun Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Two lines face each other across the lane, one ball per facing pair. On the call they pass back and forth while shuffle-sliding the length of the court together. At the baseline they move out to the sidelines and switch to overhead passes going back, then come up the middle of the floor with chest passes.",
+    "coachingPoints": [
+      "Accurate passes while moving — the pattern punishes anyone not paying attention",
+      "Do not travel in the catch-to-pass exchange",
+      "Call \"ball\" every time they want it"
+    ]
+  },
+  {
+    "id": "shuffle-pass-relay",
+    "name": "Shuffle Pass Relay",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 7,
+    "description": "Each team splits into two lines facing each other. The first pair shuffles down the court together, passing chest or bounce passes the whole way, touch the far baseline, and shuffle back before handing the ball to the next pair. First team through everybody wins.",
+    "coachingPoints": [
+      "Shuffle facing each other — no turning and running",
+      "Catch and release without taking a step",
+      "Make them call \"ball\" every time to build the habit of talking"
+    ]
+  },
+  {
+    "id": "space-invaders",
+    "name": "Space Invaders",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 8,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Mark four stations with cones in a big square and put two players on each, facing across the square. Two balls circulate between stations while two or three defenders in the middle try to intercept. Steal a ball and you swap places with whoever threw it.",
+    "coachingPoints": [
+      "Ball fakes before every pass — the middle is crowded",
+      "Pick the station that is actually open rather than the nearest one",
+      "Bounce passes work best under high hands"
+    ]
+  },
+  {
+    "id": "ten-in-a-row",
+    "name": "Ten in a Row",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 8,
+    "description": "Half-court, two even teams, one ball, no dribbling and no shooting. Ten consecutive completed passes wins the round for the team in possession. A deflection or turnover flips possession and resets the count to zero. Call the count out loud as a group.",
+    "coachingPoints": [
+      "Reverse the ball — one side of the floor gets crowded fast",
+      "Receivers must come to meet the pass",
+      "Drop the target number to five for younger groups"
+    ]
+  },
+  {
+    "id": "three-man-weave",
+    "name": "Three-Man Weave",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 7,
+    "description": "Three players start across the baseline, the middle one with the ball. Pass to either wing and run behind the player you passed to; that player passes across and runs behind their receiver. Weave the length of the floor and finish with a layup. Next group goes when the previous trio reaches half court.",
+    "coachingPoints": [
+      "Go behind the player you passed to — that is the whole pattern",
+      "Start at a walk until the pattern is automatic, then run it",
+      "No dribbling; the ball moves by pass only"
+    ]
+  },
+  {
+    "id": "two-ball-passing",
+    "name": "Two-Ball Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Partners face each other across the lane, each holding a ball. On the whistle both pass at the same time with the right hand, then the left. Next, one partner bounce passes while the other chest passes simultaneously, then swap. Finish with one overhead and one chest pass at the same time. Count consecutive clean exchanges.",
+    "coachingPoints": [
+      "Eyes on your partner, not on either ball",
+      "The two passes must be on different levels or they collide",
+      "Hold a competition for the longest unbroken run"
+    ]
+  },
+  {
+    "id": "two-on-one",
+    "name": "2-on-1 Half Court",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 3,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two attackers against one defender in the half court, no dribbling allowed. The pair must pass their way to a layup or open shot; the defender tries to force a stop or a steal. Rotate every possession: defender goes to offence, one attacker rotates out to defence.",
+    "coachingPoints": [
+      "Attackers must stay wide — if they stand together the single defender guards both",
+      "The defender should fake at one and recover to the other",
+      "No dribbling makes them find the open teammate instead of driving blindly"
+    ]
+  },
+  {
+    "id": "ultimate-basketball",
+    "name": "Ultimate Basketball",
+    "category": "passing",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 10,
+    "description": "Played like ultimate frisbee across the full or half court with one ball. No dribbling at all and the ball handler cannot move their feet. Teams advance by passing; a catch in the opponent's paint scores a point. An incomplete pass or a deflection turns the ball over on the spot.",
+    "coachingPoints": [
+      "Constant movement — the ball only travels if people get open",
+      "Teaches cutting and reading the defence without needing any dribbling skill",
+      "Great equaliser when skill levels in the group are very mixed"
+    ]
+  },
+  {
+    "id": "wall-passing",
+    "name": "Wall Passing",
+    "category": "passing",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Find a clear wall. Players stand about eight feet away and fire chest passes into it, catching the rebound and passing again, aiming at a spot you mark with tape or a cone. Thirty reps of chest, then overhead, then one-handed each side. Rotate the group through if you only have a couple of balls.",
+    "coachingPoints": [
+      "Same spot on the wall every time — accuracy is the whole point",
+      "Ready hands before the ball comes back",
+      "Great station for the kids waiting their turn in another drill"
+    ]
+  },
+  {
+    "id": "box-out-hold",
+    "name": "Three-Second Box Out",
+    "category": "rebounding",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Pairs on the block, one attacker and one defender in a rebounding stance. On the whistle the defender must box out and hold their position for three to five seconds while the attacker works around them to get to the imaginary rebound. Then you shoot the ball and the defender must secure it to earn the switch.",
+    "coachingPoints": [
+      "Wide base, forearms and backside making contact, elbows out",
+      "Find the body first, then find the ball",
+      "Chin the rebound on the catch — two hands, elbows out"
+    ]
+  },
+  {
+    "id": "circle-box-out-challenge",
+    "name": "Circle Challenge",
+    "category": "rebounding",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Two players of similar size stand back to back in the centre circle. On your signal each tries to drive the other out of the circle using only a proper box-out stance — legs wide, knees bent, back straight, hands up outside the shoulders. Whoever leaves the circle first loses. Rotate through the group three times.",
+    "coachingPoints": [
+      "Backside is the power point, not the arms",
+      "Low centre of gravity wins this — the taller player usually loses if they stand up",
+      "Match by size, and start with two players who will not be shy about it"
+    ]
+  },
+  {
+    "id": "rebound-and-chin-it",
+    "name": "Rebound and Chin It",
+    "category": "rebounding",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 5,
+    "description": "Players line up either side of the basket. You throw the ball off the backboard; the front player jumps to grab it at its highest point with two hands, chins it with elbows out, lands wide and pivots to face out, then passes to the next in line. Ten reps each.",
+    "coachingPoints": [
+      "Catch it at the peak, not on the way down",
+      "Land with a wide base and elbows out to protect it",
+      "Never bring the ball below the chin"
+    ]
+  },
+  {
+    "id": "rebound-scramble",
+    "name": "Rebound Scramble",
+    "category": "rebounding",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Three players start in the key. You put a shot up off the rim and all three go for the rebound. Whoever gets it must try to score immediately while the other two contest. First of the three to score stays on and two new players come in. Keep going until one player has held the floor.",
+    "coachingPoints": [
+      "Group players of similar size and strength together",
+      "Contest hard but no fouling that risks anybody getting hurt — set that line clearly first",
+      "Go straight back up with the rebound; do not bring the ball down"
+    ]
+  },
+  {
+    "id": "scramble-box-out",
+    "name": "Back-to-Back Scramble",
+    "category": "rebounding",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "shared",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Put a ball on the floor and stand two players back to back, the same short distance from it. On the whistle they turn and one has to box the other out to get to the ball first. Alternate who is nominated to box out. Rotate pairs so they face different opponents.",
+    "coachingPoints": [
+      "Find the body first, then go get the ball",
+      "Wide base, backside low, forearms up — no pushing with the hands",
+      "Match players by size, and rotate so nobody is always outmuscled"
+    ]
+  },
+  {
+    "id": "three-v-three-rebounding",
+    "name": "3v3 Rebounding Battle",
+    "category": "rebounding",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Three attackers and three defenders around the key. You take a shot deliberately off the rim; both teams battle for the rebound. Offensive rebound and score means the offence keeps possession and earns a point; defensive rebound plus a clean outlet pass earns the defence a point. First to five, then swap roles.",
+    "coachingPoints": [
+      "Everyone rebounds — no watching the flight of the ball from a standstill",
+      "Defenders make contact before the ball comes off",
+      "Vary where you shoot from: rebounds come off long on one side"
+    ]
+  },
+  {
+    "id": "two-on-two-box-out",
+    "name": "2-on-2 Box Out",
+    "category": "rebounding",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two defenders on the low blocks, two lines of attackers at the wings, you with the ball at the top. Pass to one wing; that player shoots while both defenders close out and box out their man. The ball stays live until somebody rebounds it, even on a make. Defenders who secure it stay on defence; attackers who get it become the defenders.",
+    "coachingPoints": [
+      "Make contact before the ball comes off the rim",
+      "No out of bounds, so set your safety limits first and ban diving",
+      "Chin the rebound and land wide"
+    ]
+  },
+  {
+    "id": "around-the-world",
+    "name": "Around the World",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Mark five to seven spots with cones in an arc around the key. Players shoot from spot one; a make moves them to the next spot, a miss means they either stay or gamble a second shot and go back to the start if they miss it. First player all the way around and back wins.",
+    "coachingPoints": [
+      "Set the spots close enough that they can actually shoot with form",
+      "Two or three shooters per ball keeps the pace up",
+      "Great low-ball-count game — one ball serves three players"
+    ]
+  },
+  {
+    "id": "curl-progression",
+    "name": "Curl Progression",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Three cones set as screens and one passer. Players line up under the basket on one side, curl tightly around a cone with hands up calling for the ball, catch, plant the inside foot and shoot straight up and down. Move the cone further from the basket to progress.",
+    "coachingPoints": [
+      "Shoulder brushes the cone — a wide curl gives the defender room",
+      "Hands ready before the catch, not after",
+      "Plant the inside foot and square to the rim in one motion"
+    ]
+  },
+  {
+    "id": "dribble-pull-up-shooting",
+    "name": "Dribble Pull-Up Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Set cones around the key, at midrange or beyond the arc depending on level. Players start in one line, attack each cone with two or three hard dribbles and pull up for the shot, rebound their own ball and pass to the next in line. Work through every cone, both directions.",
+    "coachingPoints": [
+      "Two-foot jump stop into the shot — get balanced before you rise",
+      "Attack the cone like a defender, do not drift past it",
+      "Same shooting mechanics as a stationary shot; only the entry changes"
+    ]
+  },
+  {
+    "id": "five-spot-shooting",
+    "name": "5 Spot Shooting",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Mark five spots with cones. Two teams line up at the first spot with one or two balls each. The next player shoots as soon as the previous shot hits the rim; every shooter chases their own ball and passes to a teammate without one. Once the team hits a set number of makes they move to the next cone. First team through all five wins.",
+    "coachingPoints": [
+      "Set the target to their age — three makes from five feet for eight-year-olds",
+      "Count only swishes to make it harder",
+      "Nobody stands and watches their shot; chase it immediately"
+    ]
+  },
+  {
+    "id": "follow-the-leader-shooting",
+    "name": "Follow the Leader",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Two teams in lines on the baseline, one ball each. The front player takes a baseline jump shot and follows their own shot: a make is worth two points and they pass out to the next in line, a miss must be rebounded before it hits the floor and put straight back up for one point. Once everyone has shot, the line moves to a new spot.",
+    "coachingPoints": [
+      "Watch where the ball comes off the rim — that is how you learn to follow a shot",
+      "Two points for the jump shot, one for the putback, so form still matters",
+      "Keep a running score out loud between the two teams"
+    ]
+  },
+  {
+    "id": "form-shooting",
+    "name": "Form Shooting (Perfects)",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two or three short lines a few feet from the basket, ball each. Players shoot one-handed at first, then with the guide hand added, chasing swishes rather than just makes. Rotate lines after each shot. Ten made swishes in a row as a group before anyone steps back.",
+    "coachingPoints": [
+      "Hold the follow-through until the ball hits the net",
+      "Elbow under the ball, shooting hand finishing high",
+      "Stay close — form breaks the moment the distance is too far"
+    ]
+  },
+  {
+    "id": "game-winner",
+    "name": "Game Winner",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 4,
+    "description": "Everyone gathers at a spot outside their comfortable range — the top of the key or half court. Count down from three, they take one shot each as the buzzer-beater to win an imaginary championship. Makes get bragging rights or pick the next drill. Take a shot yourself.",
+    "coachingPoints": [
+      "Keep the area under the rim clear",
+      "Perfect way to end practice on a high note",
+      "Let them narrate the commentary — the sillier the better"
+    ]
+  },
+  {
+    "id": "golden-child",
+    "name": "Golden Child",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "per-player",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Split into a dribbling team lined up in the baseline corner with a ball each, and a shooting team at the free-throw line with one or two balls. On go, the first dribbler tries to complete a lap of the half court — a \"home run\" — while the shooters shoot. Any made shot means you yell stop, the current dribbler freezes and the next one starts. Count home runs, then swap teams.",
+    "coachingPoints": [
+      "Shooters rebound their own shot and pass to the next in line fast",
+      "Set the shooting distance so makes are frequent enough to create urgency",
+      "Loud, chaotic and competitive — expect noise"
+    ]
+  },
+  {
+    "id": "half-moon",
+    "name": "Half Moon",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Scatter each team in an arc inside the three-point line, ten to fifteen feet out for younger players, and give a corner player the ball. On the whistle they shoot, follow their shot, pass to the next player in the arc, then slide out and put light pressure on that shooter. First team to a set number of makes wins.",
+    "coachingPoints": [
+      "Feet square, knees bent on the catch, land where you jumped",
+      "If they drift forward on the shot, rule that they cannot cross the arc until the ball hits the rim",
+      "The closeout is light pressure, not a block attempt"
+    ]
+  },
+  {
+    "id": "hop-form-shooting",
+    "name": "Hop Form Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Close to the rim, the shooter hops into the catch from their partner's pass, lands balanced with feet set, and shoots straight up and down with a full follow-through. Two, four, six, eight, ten reps landing on each foot pattern before switching roles.",
+    "coachingPoints": [
+      "Land balanced and shoot on the way up, no drifting sideways",
+      "Feet point at the rim on the landing",
+      "Spread pairs across baskets, or line up behind the arc if there is only one hoop"
+    ]
+  },
+  {
+    "id": "horse",
+    "name": "H-O-R-S-E",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Players take turns calling and taking a shot. If the caller makes it, everyone after must make the same shot from the same spot or take a letter. Five letters and you are out. Cap the distance so it stays about shooting rather than trick shots from the car park.",
+    "coachingPoints": [
+      "Ban shots from beyond their real range — set a boundary cone",
+      "Split into two games of three or four so nobody stands around long",
+      "Ask them to name the shot type as well as the spot"
+    ]
+  },
+  {
+    "id": "knockout",
+    "name": "Knockout",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "One line behind the free-throw line, the first two players holding the two balls. The first player shoots; if they miss they must rebound and score as fast as possible. The second shoots right after — if their shot goes in before the first player scores, the first player is out. Makes are rebounded and passed to the next in line. Last player standing wins.",
+    "coachingPoints": [
+      "No deliberately missing off the backboard to set up an easy putback",
+      "Move the line closer for younger groups so the game does not drag",
+      "Play yourself and let them try to knock the coach out"
+    ]
+  },
+  {
+    "id": "line-shooting",
+    "name": "Line Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Each pair takes any line on the floor — sideline, half-court line, lane line — and stands facing each other across it with one ball. They shoot the ball to each other, using full shooting form, trying to make it land on the line: on the line counts as a make, off it counts as a miss. After a warm-up, best of ten per pair.",
+    "coachingPoints": [
+      "No hoop involved, so they stop obsessing over makes and misses and fix their form",
+      "Right-handers put the right foot on or just right of the line, and vice versa",
+      "Perfect drill when the baskets are all busy"
+    ]
+  },
+  {
+    "id": "make-em-and-step-back",
+    "name": "Make 'Em and Step Back",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Cone four spots at roughly three, six, nine and twelve feet from the rim. Teams shoot in turn from the first spot, rebounding their own ball and passing to the next teammate. Four makes moves them back to the second spot, then three makes, then two, then one from the furthest. First team home wins.",
+    "coachingPoints": [
+      "The shrinking target keeps the longest shots from dragging on",
+      "Same form at twelve feet as at three — watch for the shot turning into a throw",
+      "Only count swishes for an advanced version"
+    ]
+  },
+  {
+    "id": "musical-basketballs",
+    "name": "Musical Basketballs",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Place the balls in a circle at centre court — one fewer ball than the number of players. Kids walk or jog around the circle while music plays or while you clap. When it stops they grab a ball and shoot; whoever is left without a ball does five dribbles and rejoins. A make means they sit and cheer until the round ends.",
+    "coachingPoints": [
+      "Nobody is eliminated for long — they rejoin the next round",
+      "Works with roughly half the group having a ball",
+      "Move the shooting spot in close so five and six year olds actually score"
+    ]
+  },
+  {
+    "id": "pivot-shooting",
+    "name": "Pivot Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two lines on the baseline with a passer at the top of the key. The player chest-passes to the passer, explodes to the free-throw line, receives the return pass, jump stops, pivots to square up, and either shoots or attacks the rim on your call.",
+    "coachingPoints": [
+      "Jump stop low and stay low through the pivot",
+      "Catch with the shot in mind — hands and feet ready",
+      "Alternate reverse and front pivots"
+    ]
+  },
+  {
+    "id": "pressure-free-throws",
+    "name": "Pressure Free Throws",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "One line at the free-throw line, one ball. Each player takes one shot with their full routine. Once someone makes it, the next shooter is \"under pressure\" — miss and you are out. Keep the chain going until one player remains. Nobody may distract the shooter.",
+    "coachingPoints": [
+      "Same routine every single time — that is the actual skill being trained",
+      "Deep breath, eyes on the back of the rim",
+      "Shoot alongside them so they see you handle the pressure too"
+    ]
+  },
+  {
+    "id": "shoot-till-you-make-it",
+    "name": "Shoot Till You Make It",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Even teams line up on the same baseline, one ball per team. On the whistle the first player speed-dribbles the length, shoots from the elbow, and keeps shooting from close range until it goes in. Then they rebound, dribble all the way back and hand off to the next player. Fastest team to get everybody through wins.",
+    "coachingPoints": [
+      "Move the shot closer for younger players so nobody gets stuck",
+      "Teammates should be loud — cheering is half the drill",
+      "Add a required dribble move at half court on later rounds"
+    ]
+  },
+  {
+    "id": "shot-contest",
+    "name": "Shot Contest",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": true,
+    "minutes": 6,
+    "description": "Every player has a ball and a spot you designate around the arc or in the key. All shoot at once, rebound their own ball, return to the spot and shoot again. First to five makes calls it out loud and wins the round. Move everyone one spot clockwise and go again.",
+    "coachingPoints": [
+      "Rebound your own miss and get straight back to the spot",
+      "Spread them out so nobody is shooting into someone's head",
+      "Needs a ball each — pair them up and alternate shots if you are short"
+    ]
+  },
+  {
+    "id": "spot-shooting-pairs",
+    "name": "Spot Shooting in Pairs",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "One ball per pair at each available hoop. One shoots, the partner rebounds and passes back. Five shots from each of five spots around the key, then swap. Partners keep a running total of makes and try to beat it next time.",
+    "coachingPoints": [
+      "Passer delivers to the shooting pocket, not at their feet",
+      "Feet set and squared before the catch",
+      "If you only have one hoop, use the sides of the backboard and a wall spot"
+    ]
+  },
+  {
+    "id": "three-team-shooting",
+    "name": "Three Team Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Split into three groups: one on each baseline with a ball, one spread along the half-court line. On the whistle the middle group runs towards a baseline calling for a pass, catches, shoots at that end and rebounds their own ball. The player who passed then runs to the other end to receive a pass there, and the rotation keeps flowing.",
+    "coachingPoints": [
+      "Give a target hand and call for it — passers should not have to guess",
+      "Shooting while tired is the point; keep the feet and follow-through honest",
+      "Set a group target of makes in three minutes"
+    ]
+  },
+  {
+    "id": "transition-shooting",
+    "name": "Transition Shooting",
+    "category": "shooting",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Players start on the baseline. A passer at the far end throws ahead as they sprint the floor; they catch on the move at the wing or the top and shoot without a dribble, then rebound and outlet back. Set a target of makes for the group inside three minutes.",
+    "coachingPoints": [
+      "Sprint, then break down into the shot — do not glide the whole way",
+      "Catch with the feet already turning towards the rim",
+      "Fatigue changes the shot: keep the follow-through honest"
+    ]
+  },
+  {
+    "id": "twenty-one-cones",
+    "name": "21 Cones",
+    "category": "shooting",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Pile all your cones on the baseline. Two teams, one ball each, shooting from a spot you designate. Every made shot earns a sprint to the pile to bring back one cone. Most cones when the pile is empty wins. Vary the shot each round.",
+    "coachingPoints": [
+      "Rotate every player through shooting — do not let one shooter take them all",
+      "Adjust the shot distance so makes come often enough to keep it moving",
+      "Use fewer cones with small groups so the game ends before they tire"
+    ]
+  },
+  {
+    "id": "defending-screens",
+    "name": "Defending Screens",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Two attackers and two defenders. The attackers run on-ball screens; the defenders must call the screen out loud and choose to go over the top or under it, then recover to stay attached. Start in slow motion with cooperative defence, then build to competitive. Rotate all four positions.",
+    "coachingPoints": [
+      "The screener's defender calls it early — \"screen left!\"",
+      "Go over the top against a shooter, under against a non-shooter",
+      "Get skinny through the gap; do not run into the screen"
+    ]
+  },
+  {
+    "id": "fastbreak-weave",
+    "name": "Fastbreak Weave into 3-on-2",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 5,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "Five players start on the baseline and weave the ball up the floor, each passing then running behind their receiver. Whoever touches it last finishes the layup. That finisher and the player who assisted immediately turn and defend, while the other three attack back the other way — a live 3-on-2. The rep ends when the defence rebounds or the offence scores.",
+    "coachingPoints": [
+      "Call the name of the player you are passing to",
+      "Talk through 3-on-2 principles before you run it: attack the front defender, fill the lanes",
+      "The two defenders play the ball and the first pass, not one man each"
+    ]
+  },
+  {
+    "id": "five-v-zero-pass-and-cut",
+    "name": "5v0 Pass and Cut",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "No defence. Players fill spots around the perimeter and run a simple pattern: pass, cut hard to the basket, and the next player fills the empty spot. Finish every third or fourth pass with a layup or a jump shot. Run it in both directions until the movement is automatic.",
+    "coachingPoints": [
+      "Fill the empty spot immediately — the shape must stay spread",
+      "Cut at full speed even with nobody guarding you",
+      "Works with four players; adjust the spots to the numbers you have"
+    ]
+  },
+  {
+    "id": "four-v-four-two-dribbles",
+    "name": "4v4 Two-Dribble Limit",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 8,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Regular 4v4 with a hard cap of two dribbles per possession per player. Exceeding it is a turnover. Teams have to move the ball and cut to create anything, which kills the habit of one player dribbling the air out of the ball.",
+    "coachingPoints": [
+      "Pass ahead and cut — the ball should travel faster than any dribbler",
+      "Catch ready to shoot, pass or drive immediately",
+      "Count dribbles out loud early on so they feel the limit"
+    ]
+  },
+  {
+    "id": "freeze-tag-basketball",
+    "name": "Freeze Tag Basketball",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "beginner"
+    ],
+    "minPlayers": 4,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "One or two taggers, everyone else dribbling inside the half court. A tagged player freezes with legs apart, holding their ball. Another dribbler frees them by rolling their own ball between the frozen player's legs. If everyone gets frozen the taggers win.",
+    "coachingPoints": [
+      "Frozen players stay loud and ask for help — teaches communication",
+      "The rescue is a rolled ball, not a throw",
+      "Rotate taggers frequently"
+    ]
+  },
+  {
+    "id": "home-run",
+    "name": "Home Run",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 3,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "One line at a shooting spot with one or two balls. A make is a home run and the player goes to the back of the line. A miss earns a strike against them; three strikes and they owe the group ten dribbles or a lap. Count the team's total home runs and try to beat it in the next round.",
+    "coachingPoints": [
+      "Keep the shot within their range so home runs actually happen",
+      "The team total makes it cooperative rather than only competitive",
+      "Fast rotation — rebound your own shot and pass to the next"
+    ]
+  },
+  {
+    "id": "how-to-set-a-screen",
+    "name": "Setting Screens",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "pairs",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 10,
+    "description": "In pairs with one ball, walk through on-ball screens: the screener sets a wide, still base beside the defender, the ball handler waits for it and then attacks shoulder-to-shoulder off it, and the screener rolls to the basket. Do it without defence first, then add a defender once the shape is right.",
+    "coachingPoints": [
+      "Screener must be stationary at contact or it is a foul",
+      "Ball handler sets it up by taking a step the other way first",
+      "Brush shoulders coming off — a wide path defeats the screen"
+    ]
+  },
+  {
+    "id": "no-dribble-scrimmage",
+    "name": "No-Dribble Scrimmage",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Full game rules except nobody may dribble at all. Players can pivot but must pass to advance the ball. Everything has to come from cutting, screening and quick ball movement. Ten minutes of this exposes exactly who moves without the ball.",
+    "coachingPoints": [
+      "Cut hard to the rim every time you pass",
+      "Nobody stands still — a stationary offence cannot score here",
+      "Levels the field when skill in the group is very mixed"
+    ]
+  },
+  {
+    "id": "outlet-and-post",
+    "name": "Outlet and Post",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Two lines at each end. The post player throws the ball off the backboard, rebounds it, and outlets to the guard who has broken towards half court calling for it. The guard dribbles to the wing at the far end while the post sprints to fill the lane and post up. The guard feeds the post, who either scores or kicks it back out for a jump shot. Next pair goes once the shot is up.",
+    "coachingPoints": [
+      "Loud outlet call — the rebounder should not have to look for the guard",
+      "Turn to the outside on the outlet pivot, never into the middle",
+      "Post player sprints the floor; that is what earns the easy basket"
+    ]
+  },
+  {
+    "id": "rock-paper-scissors-1v1",
+    "name": "Rock Paper Scissors 1v1",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "pairs",
+    "balls": "per-pair",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Partners face each other with a ball on the floor between them, near a hoop. They play rock paper scissors; the winner grabs the ball and attacks, the loser defends. Play it out, reset, and go again. First to five baskets wins the pair.",
+    "coachingPoints": [
+      "The scramble for the ball teaches reaction and getting low",
+      "Loser must sprint into a stance rather than complaining",
+      "Cap the dribbles to keep possessions short and lively"
+    ]
+  },
+  {
+    "id": "small-sided-games",
+    "name": "Small-Sided Games",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 15,
+    "description": "Play 2v2, 3v3 or 4v4 on a half court, using both ends if you have the numbers and hoops. The ball must be taken back past a line on a change of possession. Let them play with minimal interruption — stop only when the same mistake happens three times.",
+    "coachingPoints": [
+      "Fewer players means more touches for everyone — better than 5v5 at any age",
+      "Stress spacing: spread to the edges, do not chase the ball in a pack",
+      "Rebalance the teams between games rather than letting one side dominate all session"
+    ]
+  },
+  {
+    "id": "steal-the-bacon",
+    "name": "Steal the Bacon",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 4,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 8,
+    "description": "Two teams on opposite sidelines, numbered off, with one ball on the floor at centre court. Call a number and those two players sprint for the ball; whoever gets it attacks the basket while the other defends. Point for a basket, point for a stop. Call two numbers at a time for a 2v2 version.",
+    "coachingPoints": [
+      "Get low to scoop the ball rather than bending over at speed",
+      "Whoever loses the race must immediately get into a stance",
+      "Keep possessions short — reset after one shot"
+    ]
+  },
+  {
+    "id": "three-on-three-winner-stays",
+    "name": "3-on-3 Winner Stays",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "threes",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 15,
+    "description": "Teams of three. Two play half court and the rest wait on the sideline. First team to score wins the possession and stays on; the losers come off and the next trio checks the ball in. The aim is to hold the floor as long as you can. Great way to keep a large group rotating quickly.",
+    "coachingPoints": [
+      "Rotate in fast — the waiting team should be ready to check the ball immediately",
+      "Add a condition to stop hero-ball: five passes before a shot, or everyone touches it",
+      "For a defensive version, award the point for getting a stop instead"
+    ]
+  },
+  {
+    "id": "three-on-two-two-on-one",
+    "name": "3-on-2, 2-on-1 Break",
+    "category": "team-play",
+    "type": "drill",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Three attackers go against two defenders at one end. As soon as the possession ends, the two defenders take the ball and break the other way against just one of the previous attackers, who sprints back to defend alone — the other two stay off. Two fresh attackers join the lone defender's end and the cycle repeats continuously.",
+    "coachingPoints": [
+      "Fill three wide lanes going the other way and pass ahead",
+      "The single defender protects the rim and fakes at the ball to buy time",
+      "Sprint back the instant possession changes — that habit is the real lesson"
+    ]
+  },
+  {
+    "id": "three-v-three-shrink-court",
+    "name": "3v3 Shrink the Court",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "any",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Standard 3v3 in the half court, but every two minutes you move the cones in and shrink the playing area. As space disappears, players are forced to cut harder, pass quicker and handle tighter pressure. Keep a running score across all the rounds.",
+    "coachingPoints": [
+      "Call out the new boundary clearly at each shrink",
+      "Less space means quicker decisions — no holding the ball",
+      "Screens become much more valuable as the court tightens"
+    ]
+  },
+  {
+    "id": "war-numbers",
+    "name": "War",
+    "category": "team-play",
+    "type": "game",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 6,
+    "grouping": "even-teams",
+    "balls": "shared",
+    "needsHoop": true,
+    "minutes": 12,
+    "description": "Two teams on opposite sidelines, players numbered off. You throw the ball towards midcourt and call numbers — \"two and five!\" — and those players from each team sprint on and play it out until someone scores. Call one number for 1v1, three for 3v3, or everyone for a finish. Teams swap ends between rounds.",
+    "coachingPoints": [
+      "Throw the ball to advantage one side so they do not collide going for it",
+      "Match numbers so similar players meet each other",
+      "Finish by calling every number for a full-team scramble"
+    ]
+  },
+  {
+    "id": "dynamic-warmup",
+    "name": "Dynamic Warm-Up",
+    "category": "warmup",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 5,
+    "description": "Players spread along the baseline and move to half court and back through six movements: jog and backpedal, butt kicks, high knees, lunge and twist, side lunge both directions, and karaoke (carioca). Send the next wave once the previous one is halfway across.",
+    "coachingPoints": [
+      "Quality over speed — this is activation, not conditioning",
+      "Everyone finishes each length before starting the next movement",
+      "Add arm circles and ankle hops in cold gyms"
+    ]
+  },
+  {
+    "id": "line-touches",
+    "name": "Line Touches",
+    "category": "warmup",
+    "type": "drill",
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "minPlayers": 1,
+    "grouping": "any",
+    "balls": "none",
+    "needsHoop": false,
+    "minutes": 4,
+    "description": "From the baseline, players sprint to the near free-throw line and back, half court and back, far free-throw line and back, then far baseline and back. Touch every line with a hand. Run two to three sets with 30 seconds rest between.",
+    "coachingPoints": [
+      "Low change of direction — no rounding off the turns",
+      "Touch the line with a hand, not a foot, to force a real drop of the hips",
+      "Use as a reset when focus is fading"
+    ]
+  },
+  {
+    "id": "stationary-ballhandling",
+    "name": "Stationary Ball-Handling Series",
+    "category": "warmup",
+    "type": "drill",
+    "levels": [
+      "beginner",
+      "intermediate"
+    ],
+    "minPlayers": 2,
+    "grouping": "any",
+    "balls": "per-player",
+    "needsHoop": false,
+    "minutes": 6,
+    "description": "Everyone stands in their own space with a ball, no dribbling. Work through ball slaps, fingertip taps, ball circles around the head, waist and each knee, then figure-8 between the legs. Hold each one for 20 to 30 seconds and call the change.",
+    "coachingPoints": [
+      "Fingertips, never palms",
+      "Eyes up — call out numbers on your fingers and have them shout the count",
+      "Circles go both directions"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "drills",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "build": "bun run build.js"
+  },
+  "devDependencies": {
+    "happy-dom": "^20.11.2"
+  }
+}
